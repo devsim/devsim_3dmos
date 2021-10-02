@@ -1,0 +1,241 @@
+$ ----------------------------------------------------------- $
+$            MEDICI FILE FOR n-MOSFET SIMULATION              $
+$ ----------------------------------------------------------- $
+
+
+ASSIGN	name=L.G	n.val=0.12
+ASSIGN	name=T.PLY	n.val=0.3
+ASSIGN	name=T.OX	n.val=0.0049
+
+$ T.LTO = low temp. oxide thickness
+ASSIGN	name=T.LTO	n.val=0.025
+
+$ J.SD = source/drain junction depth
+$ L.SD = source/drain length
+$ RAT.SD = source/drain lateral junction ratio
+ASSIGN	name=RAT.SD	n.val=0.0
+ASSIGN	name=J.SD	n.val=0.05
+ASSIGN	name=L.SD	n.val=0.1
+
+ASSIGN	name=XMIN	n.val=-@L.G/2-@L.SD
+ASSIGN	name=XMAX	n.val=@L.G/2+@L.SD
+ASSIGN	name=YMIN	n.val=-@T.OX-@T.PLY
+ASSIGN	name=YMAX	n.val=0.6
+
+$ ************************************************************************ $
+
+MESH	smooth=1
+
+$ source region
+X.MESH	x.min=@XMIN	width=@L.SD	h1=@L.SD/4	h2=@L.G/18
+
+$ channel
+X.MESH	x.max=-@L.G/4	h1=@L.G/40
+X.MESH	x.max=0.0	h1=@L.G/25
+X.MESH	x.max=@L.G/4	h1=@L.G/25
+X.MESH	x.max=@L.G/2.0	h1=@L.G/40
+
+$ drain region
+X.MESH	width=@L.SD	h1=@L.G/18	h2=@L.SD/4
+
+$ poly gate
+Y.MESH	y.min=-@T.OX-@T.PLY	depth=@T.PLY	h1=@T.PLY/3	h2=@T.OX
+
+$ oxide
+Y.MESH	depth=@T.OX	h1=@T.OX/4
+
+$ source, drain, channel
+Y.MESH	depth=@J.SD	h1=@T.OX/6	h2=@J.SD/5
+
+$ substrate
+Y.MESH	y.max=@YMAX	h1=@J.SD/5	h2=@YMAX/5
+
+ELIMINATE	column
++		x.min=@XMIN		x.max=@XMAX
++		y.min=@YMAX*2/3		y.max=@YMAX
+
+$ ************************************************************************ $
+
+$ gate
+REGION	num=1	polysili	x.min=-@L.G/2	x.max=@L.G/2
++				y.min=@YMIN	y.max=-@T.OX
+
+
+$ LTO
+REGION	num=2	oxide	x.min=@XMIN		x.max=-@L.G/2
++			y.min=-@T.OX-@T.LTO	y.max=-@T.OX
+REGION	num=2	oxide	x.min=-@L.G/2-@T.LTO	x.max=-@L.G/2
++			y.min=@YMIN		y.max=-@T.OX
+
+REGION	num=2	oxide	x.min=@L.G/2		x.max=@XMAX
++			y.min=-@T.OX-@T.LTO	y.max=-@T.OX
+REGION	num=2	oxide	x.min=@L.G/2		x.max=@L.G/2+@T.LTO
++			y.min=@YMIN		y.max=-@T.OX
+
+
+$ nitride
+REGION	num=3	nitride	y.min=@YMIN	y.max=-@T.OX-@T.LTO
++		x.min=@XMIN		x.max=-@L.G/2-@T.LTO
+
+REGION	num=3	nitride	y.min=@YMIN	y.max=-@T.OX-@T.LTO
++		x.min=@L.G/2+@T.LTO	x.max=@XMAX
+
+
+$ gate oxide
+REGION	num=4	oxide	y.min=-@T.OX	y.max=0.0
+
+
+$ substrate
+REGION	num=5	silicon	y.min=0.0	y.max=@YMAX
+
+$ ************************************************************************ $
+
+ELECTRODE	name=source	x.max=-@L.G/2-@L.SD/2
++				y.min=0.0	y.max=0.0
+ELECTRODE	name=drain	x.min=@L.G/2+@L.SD/2
++				y.min=0.0	y.max=0.0
+ELECTRODE	name=gate	x.min=-@L.G/2	x.max=@L.G/2
++				y.min=@YMIN	y.max=-@T.OX
+ELECTRODE	name=back	bottom
+
+$ ************************************************************************ $
+
+$ ssr doping
+PROFILE	region=5	1d.ascii p.col=2 in.file=doping/ssr.doping
+
+$ source/drain/channel 2D doping
+PROFILE region=5        2d.ascii x.col=1 y.col=2 n.col=3 
++                       in.file=doping/source.doping   x.max=0
+
+PROFILE region=5        2d.ascii x.col=1 y.col=2 n.col=3 
++                       in.file=doping/drain.doping    x.min=0.0005
+
+$ doping regrid
+$ REGRID	doping	log	ratio=2		smooth=1
+
+$ ************************************************************************ $
+
+CONTACT		name=source	neutral		resistance=0
+CONTACT		name=drain	neutral		resistance=0
+CONTACT		name=gate	n.polysi	resistance=0
+CONTACT		name=back	neutral		resistance=0
+
+$ ************************************************************************ $
+
+
+MODELS	FLDMOB LSMMOB
+
+
+$ ------------------------------------------------------------------------- $
+
+
+$ MOSTYPE = NMOS or PMOS
+$ VSource = source bias
+$ Idmax = maximum current to be encountered
+$ VGstart = starting gate bias
+$ VGend = maximum gate bias (actual gate bias may be smaller due to Idmax criterion)
+$ VGstep = gate bias step size
+$ VBstart = starting back bias
+$ VBstep = back bias step size (for ramp)
+$ VBsnum = number of steps to make back bias correspond to back bias spacing
+$ numVB = total number of back bias points
+$ Vdrain = array of drain biases
+
+
+ASSIGN	name=MOSTYPE	c.val="NMOS"
+ASSIGN	name=VSource	n.val=0
+
+ASSIGN  name=Idmax	n.val=1
+ASSIGN  name=VGstart	n.val=-0.1
+ASSIGN  name=VGend	n.val=0.7
+ASSIGN  name=VGstep	n.val=0.1
+
+LOOP	steps=1
+ASSIGN  name=Vback
++ n.val=(0)
+
+LOOP	steps=3
+ASSIGN	name=Vdrain
++ n.val=(0.21 1.01 2.01)
+
+
+$ ------------------------------------------------------------------------- $
+
+ASSIGN  name=Vgate      n.val=@VGstart
+
+
+CONTACT		name=source	neutral		resistance=0
+CONTACT		name=drain	neutral		resistance=0
+
+$ use Gummel
+IF cond=(@MOSTYPE="PMOS")
+	SYMB    gummel	carriers=1	holes
+ELSE
+	SYMB	gummel	carriers=1	electrons
+IF.END
+METHOD    iccg damped itlimit=40 stack=10 cont.stk
+
+SOLVE	V(drain)=@Vdrain V(source)=@VSource V(gate)=@Vgate  V(back)=@Vback
+
+
+CONTACT		name=source	neutral		resistance=95
+CONTACT		name=drain	neutral		resistance=95
+
+$ switch back to Newton
+IF cond=(@MOSTYPE="PMOS")
+	SYMB	newton	carriers=1	holes
+ELSE
+	SYMB	newton	carriers=1	electrons
+IF.END
+METHOD	autonr	n.damp	n.dvlim=1.5
+
+SOLVE	V(drain)=@Vdrain V(source)=@VSource V(gate)=@Vgate  V(back)=@Vback
++	out.file="solnGM_"@Vback"_"@Vdrain	save.bias
+
+
+$ ------------------------------------------------------------------------- $
+
+
+$ variable declaration
+ASSIGN  name=Icurr      n.val=1.0e-20
+
+LOG	out.file="IVM.vbvd"@Vback"_"@Vdrain
+
+$ steps gives maximum permissible number of steps.
+$ loop for Vgate
+LOOP    steps=100
+
+	EXTRACT name=Icurr      exp=@I(drain)
+
+	ASSIGN  name=NEX  l.val=((@Icurr>@Idmax)&(@MOSTYPE="NMOS"))
+	ASSIGN  name=PEX  l.val=((@Icurr<@Idmax)&(@MOSTYPE="PMOS"))
+	
+	ASSIGN	name=R1	  l.val=((@Vgate>=@VGstart)&(@Vgate<=@VGend))
+	ASSIGN	name=R2	  l.val=((@Vgate<=@VGstart)&(@Vgate>=@VGend))
+	ASSIGN  name=R3   l.val=^(@R1|@R2)
+
+	IF cond=(@NEX|@PEX|@R3)
+		L.MODIFY        break
+	ELSE
+		SOLVE   V(gate)=@Vgate
+		ASSIGN  name=Vgate      n.val=@Vgate+@VGstep
+	IF.END
+
+L.END
+
+
+$ finished with Vgate for one Vback, close idvg TIF file
+LOG     close
+
+
+$ ------------------------------------------------------------------------- $
+
+
+$ LOOP FOR BACK BIASES (LOOP statement contained in settings.ivm)
+L.END
+
+$ LOOP FOR DRAIN BIASES (LOOP statement contained in settings.ivm)
+L.END
+
+
+$ ------------------------------------------------------------------------- $

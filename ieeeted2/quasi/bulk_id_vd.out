@@ -1,0 +1,2055 @@
+Physical group name body_contact has 0 Tetrahedra.
+Physical group name body_contact has 174 Triangles.
+Physical group name body_contact has 295 Lines.
+Physical group name body_contact has 122 Points.
+Physical group name bulk has 270693 Tetrahedra.
+Physical group name bulk has 552517 Triangles.
+Physical group name bulk has 332269 Lines.
+Physical group name bulk has 50446 Points.
+Physical group name bulk_oxide_interface has 0 Tetrahedra.
+Physical group name bulk_oxide_interface has 3334 Triangles.
+Physical group name bulk_oxide_interface has 5095 Lines.
+Physical group name bulk_oxide_interface has 1762 Points.
+Physical group name drain_contact has 0 Tetrahedra.
+Physical group name drain_contact has 357 Triangles.
+Physical group name drain_contact has 560 Lines.
+Physical group name drain_contact has 204 Points.
+Physical group name gate has 14927 Tetrahedra.
+Physical group name gate has 31661 Triangles.
+Physical group name gate has 20245 Lines.
+Physical group name gate has 3512 Points.
+Physical group name gate_contact has 0 Tetrahedra.
+Physical group name gate_contact has 1236 Triangles.
+Physical group name gate_contact has 1971 Lines.
+Physical group name gate_contact has 736 Points.
+Physical group name nitride0 has 12170 Tetrahedra.
+Physical group name nitride0 has 25502 Triangles.
+Physical group name nitride0 has 16020 Lines.
+Physical group name nitride0 has 2689 Points.
+Physical group name nitride0_oxide_interface has 0 Tetrahedra.
+Physical group name nitride0_oxide_interface has 372 Triangles.
+Physical group name nitride0_oxide_interface has 607 Lines.
+Physical group name nitride0_oxide_interface has 236 Points.
+Physical group name nitride1 has 12308 Tetrahedra.
+Physical group name nitride1 has 25778 Triangles.
+Physical group name nitride1 has 16180 Lines.
+Physical group name nitride1 has 2711 Points.
+Physical group name nitride1_oxide_interface has 0 Tetrahedra.
+Physical group name nitride1_oxide_interface has 372 Triangles.
+Physical group name nitride1_oxide_interface has 607 Lines.
+Physical group name nitride1_oxide_interface has 236 Points.
+Physical group name oxide has 41793 Tetrahedra.
+Physical group name oxide has 87868 Triangles.
+Physical group name oxide has 55561 Lines.
+Physical group name oxide has 9487 Points.
+Physical group name source_contact has 0 Tetrahedra.
+Physical group name source_contact has 376 Triangles.
+Physical group name source_contact has 589 Lines.
+Physical group name source_contact has 214 Points.
+Device mosfet has 65457 coordinates with max index 65457
+Region bulk has 50446 nodes.
+Region gate has 3512 nodes.
+Region nitride0 has 2689 nodes.
+Region nitride1 has 2711 nodes.
+Region oxide has 9487 nodes.
+Contact body in region bulk with 122 nodes
+Contact drain in region bulk with 204 nodes
+Warning, contact "drain" shares a node with contact "drain_ox" (repeated 203 times)
+Contact drain_ox in region oxide with 204 nodes
+Contact gate in region oxide with 736 nodes
+Contact source in region bulk with 214 nodes
+Warning, contact "source" shares a node with contact "source_ox" (repeated 213 times)
+Contact source_ox in region oxide with 214 nodes
+Adding interface bulk_oxide with 1762, 1762 nodes
+Adding interface nitride0_oxide with 236, 236 nodes
+Adding interface nitride1_oxide with 236, 236 nodes
+bulk source
+bulk drain
+bulk body
+Region "bulk" on device "mosfet" has equations 0:50445
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 50446:53134
+Region "nitride1" on device "mosfet" has equations 53135:55845
+Region "oxide" on device "mosfet" has equations 55846:65332
+Device "mosfet" has equations 0:65332
+number of equations 65333
+Iteration: 0
+  Device: "mosfet"	RelError: 4.00000e+00	AbsError: 1.66775e+02
+    Region: "bulk"	RelError: 1.00000e+00	AbsError: 2.29809e-01
+      Equation: "PotentialEquation"	RelError: 1.00000e+00	AbsError: 2.29809e-01
+    Region: "nitride0"	RelError: 1.00000e+00	AbsError: 6.86456e+01
+      Equation: "PotentialEquation"	RelError: 1.00000e+00	AbsError: 6.86456e+01
+    Region: "nitride1"	RelError: 1.00000e+00	AbsError: 7.14253e+01
+      Equation: "PotentialEquation"	RelError: 1.00000e+00	AbsError: 7.14253e+01
+    Region: "oxide"	RelError: 1.00000e+00	AbsError: 1.66775e+02
+      Equation: "PotentialEquation"	RelError: 1.00000e+00	AbsError: 1.66775e+02
+Iteration: 1
+  Device: "mosfet"	RelError: 6.97297e-01	AbsError: 8.16828e+00
+    Region: "bulk"	RelError: 4.99583e-01	AbsError: 2.29339e-01
+      Equation: "PotentialEquation"	RelError: 4.99583e-01	AbsError: 2.29339e-01
+    Region: "nitride0"	RelError: 3.61715e-02	AbsError: 2.38925e+00
+      Equation: "PotentialEquation"	RelError: 3.61715e-02	AbsError: 2.38925e+00
+    Region: "nitride1"	RelError: 3.70254e-02	AbsError: 2.55013e+00
+      Equation: "PotentialEquation"	RelError: 3.70254e-02	AbsError: 2.55013e+00
+    Region: "oxide"	RelError: 1.24518e-01	AbsError: 8.16828e+00
+      Equation: "PotentialEquation"	RelError: 1.24518e-01	AbsError: 8.16828e+00
+Iteration: 2
+  Device: "mosfet"	RelError: 4.63777e+03	AbsError: 1.59292e+02
+    Region: "bulk"	RelError: 2.97096e+00	AbsError: 1.70417e-01
+      Equation: "PotentialEquation"	RelError: 2.97096e+00	AbsError: 1.70417e-01
+    Region: "nitride0"	RelError: 3.07041e+01	AbsError: 6.41661e+01
+      Equation: "PotentialEquation"	RelError: 3.07041e+01	AbsError: 6.41661e+01
+    Region: "nitride1"	RelError: 3.53046e+01	AbsError: 6.69781e+01
+      Equation: "PotentialEquation"	RelError: 3.53046e+01	AbsError: 6.69781e+01
+    Region: "oxide"	RelError: 4.56879e+03	AbsError: 1.59292e+02
+      Equation: "PotentialEquation"	RelError: 4.56879e+03	AbsError: 1.59292e+02
+Iteration: 3
+  Device: "mosfet"	RelError: 8.31128e+01	AbsError: 1.73169e+01
+    Region: "bulk"	RelError: 1.27425e+01	AbsError: 1.08645e-01
+      Equation: "PotentialEquation"	RelError: 1.27425e+01	AbsError: 1.08645e-01
+    Region: "nitride0"	RelError: 6.32464e+00	AbsError: 3.34502e+00
+      Equation: "PotentialEquation"	RelError: 6.32464e+00	AbsError: 3.34502e+00
+    Region: "nitride1"	RelError: 6.56281e+00	AbsError: 3.34552e+00
+      Equation: "PotentialEquation"	RelError: 6.56281e+00	AbsError: 3.34552e+00
+    Region: "oxide"	RelError: 5.74829e+01	AbsError: 1.73169e+01
+      Equation: "PotentialEquation"	RelError: 5.74829e+01	AbsError: 1.73169e+01
+Iteration: 4
+  Device: "mosfet"	RelError: 9.23006e+03	AbsError: 1.38572e+00
+    Region: "bulk"	RelError: 8.41524e+03	AbsError: 9.64249e-02
+      Equation: "PotentialEquation"	RelError: 8.41524e+03	AbsError: 9.64249e-02
+    Region: "nitride0"	RelError: 1.21403e-01	AbsError: 4.32800e-02
+      Equation: "PotentialEquation"	RelError: 1.21403e-01	AbsError: 4.32800e-02
+    Region: "nitride1"	RelError: 1.39770e-01	AbsError: 4.50584e-02
+      Equation: "PotentialEquation"	RelError: 1.39770e-01	AbsError: 4.50584e-02
+    Region: "oxide"	RelError: 8.14557e+02	AbsError: 1.38572e+00
+      Equation: "PotentialEquation"	RelError: 8.14557e+02	AbsError: 1.38572e+00
+Iteration: 5
+  Device: "mosfet"	RelError: 8.71571e+03	AbsError: 1.22173e+00
+    Region: "bulk"	RelError: 3.06769e+03	AbsError: 1.12194e-01
+      Equation: "PotentialEquation"	RelError: 3.06769e+03	AbsError: 1.12194e-01
+    Region: "nitride0"	RelError: 5.94165e-01	AbsError: 1.32872e-01
+      Equation: "PotentialEquation"	RelError: 5.94165e-01	AbsError: 1.32872e-01
+    Region: "nitride1"	RelError: 8.52638e-01	AbsError: 1.48321e-01
+      Equation: "PotentialEquation"	RelError: 8.52638e-01	AbsError: 1.48321e-01
+    Region: "oxide"	RelError: 5.64657e+03	AbsError: 1.22173e+00
+      Equation: "PotentialEquation"	RelError: 5.64657e+03	AbsError: 1.22173e+00
+Iteration: 6
+  Device: "mosfet"	RelError: 1.90086e+04	AbsError: 2.23978e+00
+    Region: "bulk"	RelError: 1.54151e+04	AbsError: 1.28190e-01
+      Equation: "PotentialEquation"	RelError: 1.54151e+04	AbsError: 1.28190e-01
+    Region: "nitride0"	RelError: 3.39899e+00	AbsError: 1.72792e-01
+      Equation: "PotentialEquation"	RelError: 3.39899e+00	AbsError: 1.72792e-01
+    Region: "nitride1"	RelError: 1.91072e+02	AbsError: 1.92872e-01
+      Equation: "PotentialEquation"	RelError: 1.91072e+02	AbsError: 1.92872e-01
+    Region: "oxide"	RelError: 3.39903e+03	AbsError: 2.23978e+00
+      Equation: "PotentialEquation"	RelError: 3.39903e+03	AbsError: 2.23978e+00
+Iteration: 7
+  Device: "mosfet"	RelError: 2.52565e+04	AbsError: 1.29060e-01
+    Region: "bulk"	RelError: 2.51974e+04	AbsError: 1.29060e-01
+      Equation: "PotentialEquation"	RelError: 2.51974e+04	AbsError: 1.29060e-01
+    Region: "nitride0"	RelError: 6.22764e-02	AbsError: 3.66275e-03
+      Equation: "PotentialEquation"	RelError: 6.22764e-02	AbsError: 3.66275e-03
+    Region: "nitride1"	RelError: 2.11847e+00	AbsError: 3.57959e-03
+      Equation: "PotentialEquation"	RelError: 2.11847e+00	AbsError: 3.57959e-03
+    Region: "oxide"	RelError: 5.69168e+01	AbsError: 8.10959e-02
+      Equation: "PotentialEquation"	RelError: 5.69168e+01	AbsError: 8.10959e-02
+Iteration: 8
+  Device: "mosfet"	RelError: 6.77352e+03	AbsError: 1.42437e-01
+    Region: "bulk"	RelError: 6.64380e+03	AbsError: 1.28464e-01
+      Equation: "PotentialEquation"	RelError: 6.64380e+03	AbsError: 1.28464e-01
+    Region: "nitride0"	RelError: 4.39799e-01	AbsError: 4.25606e-02
+      Equation: "PotentialEquation"	RelError: 4.39799e-01	AbsError: 4.25606e-02
+    Region: "nitride1"	RelError: 1.49683e+00	AbsError: 4.62079e-02
+      Equation: "PotentialEquation"	RelError: 1.49683e+00	AbsError: 4.62079e-02
+    Region: "oxide"	RelError: 1.27782e+02	AbsError: 1.42437e-01
+      Equation: "PotentialEquation"	RelError: 1.27782e+02	AbsError: 1.42437e-01
+Iteration: 9
+  Device: "mosfet"	RelError: 5.77672e+03	AbsError: 2.20135e-01
+    Region: "bulk"	RelError: 5.52646e+03	AbsError: 1.27155e-01
+      Equation: "PotentialEquation"	RelError: 5.52646e+03	AbsError: 1.27155e-01
+    Region: "nitride0"	RelError: 3.72847e-01	AbsError: 5.75323e-02
+      Equation: "PotentialEquation"	RelError: 3.72847e-01	AbsError: 5.75323e-02
+    Region: "nitride1"	RelError: 6.68955e-01	AbsError: 6.23811e-02
+      Equation: "PotentialEquation"	RelError: 6.68955e-01	AbsError: 6.23811e-02
+    Region: "oxide"	RelError: 2.49220e+02	AbsError: 2.20135e-01
+      Equation: "PotentialEquation"	RelError: 2.49220e+02	AbsError: 2.20135e-01
+Iteration: 10
+  Device: "mosfet"	RelError: 1.17787e+04	AbsError: 2.28394e+00
+    Region: "bulk"	RelError: 9.97722e+03	AbsError: 1.00255e-01
+      Equation: "PotentialEquation"	RelError: 9.97722e+03	AbsError: 1.00255e-01
+    Region: "nitride0"	RelError: 6.45026e-01	AbsError: 2.80390e-01
+      Equation: "PotentialEquation"	RelError: 6.45026e-01	AbsError: 2.80390e-01
+    Region: "nitride1"	RelError: 7.71947e-01	AbsError: 3.15651e-01
+      Equation: "PotentialEquation"	RelError: 7.71947e-01	AbsError: 3.15651e-01
+    Region: "oxide"	RelError: 1.80010e+03	AbsError: 2.28394e+00
+      Equation: "PotentialEquation"	RelError: 1.80010e+03	AbsError: 2.28394e+00
+Iteration: 11
+  Device: "mosfet"	RelError: 2.60640e+03	AbsError: 1.19192e+00
+    Region: "bulk"	RelError: 2.60368e+03	AbsError: 5.97099e-02
+      Equation: "PotentialEquation"	RelError: 2.60368e+03	AbsError: 5.97099e-02
+    Region: "nitride0"	RelError: 2.97784e-01	AbsError: 1.84338e-01
+      Equation: "PotentialEquation"	RelError: 2.97784e-01	AbsError: 1.84338e-01
+    Region: "nitride1"	RelError: 3.34487e-01	AbsError: 2.05515e-01
+      Equation: "PotentialEquation"	RelError: 3.34487e-01	AbsError: 2.05515e-01
+    Region: "oxide"	RelError: 2.07876e+00	AbsError: 1.19192e+00
+      Equation: "PotentialEquation"	RelError: 2.07876e+00	AbsError: 1.19192e+00
+Iteration: 12
+  Device: "mosfet"	RelError: 2.11804e+04	AbsError: 1.07450e-01
+    Region: "bulk"	RelError: 2.11802e+04	AbsError: 5.14683e-02
+      Equation: "PotentialEquation"	RelError: 2.11802e+04	AbsError: 5.14683e-02
+    Region: "nitride0"	RelError: 4.84776e-03	AbsError: 3.01554e-03
+      Equation: "PotentialEquation"	RelError: 4.84776e-03	AbsError: 3.01554e-03
+    Region: "nitride1"	RelError: 1.01498e-02	AbsError: 6.30014e-03
+      Equation: "PotentialEquation"	RelError: 1.01498e-02	AbsError: 6.30014e-03
+    Region: "oxide"	RelError: 1.83951e-01	AbsError: 1.07450e-01
+      Equation: "PotentialEquation"	RelError: 1.83951e-01	AbsError: 1.07450e-01
+Iteration: 13
+  Device: "mosfet"	RelError: 6.72834e+03	AbsError: 5.40434e-02
+    Region: "bulk"	RelError: 6.72824e+03	AbsError: 4.14386e-02
+      Equation: "PotentialEquation"	RelError: 6.72824e+03	AbsError: 4.14386e-02
+    Region: "nitride0"	RelError: 1.17991e-02	AbsError: 7.25839e-03
+      Equation: "PotentialEquation"	RelError: 1.17991e-02	AbsError: 7.25839e-03
+    Region: "nitride1"	RelError: 8.60447e-03	AbsError: 5.29350e-03
+      Equation: "PotentialEquation"	RelError: 8.60447e-03	AbsError: 5.29350e-03
+    Region: "oxide"	RelError: 8.16253e-02	AbsError: 5.40434e-02
+      Equation: "PotentialEquation"	RelError: 8.16253e-02	AbsError: 5.40434e-02
+Iteration: 14
+  Device: "mosfet"	RelError: 2.66036e+05	AbsError: 3.75092e-02
+    Region: "bulk"	RelError: 2.66036e+05	AbsError: 3.03831e-02
+      Equation: "PotentialEquation"	RelError: 2.66036e+05	AbsError: 3.03831e-02
+    Region: "nitride0"	RelError: 7.92503e-03	AbsError: 4.83708e-03
+      Equation: "PotentialEquation"	RelError: 7.92503e-03	AbsError: 4.83708e-03
+    Region: "nitride1"	RelError: 7.58130e-03	AbsError: 4.63303e-03
+      Equation: "PotentialEquation"	RelError: 7.58130e-03	AbsError: 4.63303e-03
+    Region: "oxide"	RelError: 5.76862e-02	AbsError: 3.75092e-02
+      Equation: "PotentialEquation"	RelError: 5.76862e-02	AbsError: 3.75092e-02
+Iteration: 15
+  Device: "mosfet"	RelError: 1.83416e+01	AbsError: 2.57436e-02
+    Region: "bulk"	RelError: 1.82936e+01	AbsError: 2.57436e-02
+      Equation: "PotentialEquation"	RelError: 1.82936e+01	AbsError: 2.57436e-02
+    Region: "nitride0"	RelError: 2.61684e-03	AbsError: 1.59277e-03
+      Equation: "PotentialEquation"	RelError: 2.61684e-03	AbsError: 1.59277e-03
+    Region: "nitride1"	RelError: 3.73473e-03	AbsError: 2.27377e-03
+      Equation: "PotentialEquation"	RelError: 3.73473e-03	AbsError: 2.27377e-03
+    Region: "oxide"	RelError: 4.16489e-02	AbsError: 2.55512e-02
+      Equation: "PotentialEquation"	RelError: 4.16489e-02	AbsError: 2.55512e-02
+Iteration: 16
+  Device: "mosfet"	RelError: 7.94454e-01	AbsError: 1.37859e-02
+    Region: "bulk"	RelError: 7.71259e-01	AbsError: 8.32045e-03
+      Equation: "PotentialEquation"	RelError: 7.71259e-01	AbsError: 8.32045e-03
+    Region: "nitride0"	RelError: 3.98862e-04	AbsError: 2.42592e-04
+      Equation: "PotentialEquation"	RelError: 3.98862e-04	AbsError: 2.42592e-04
+    Region: "nitride1"	RelError: 3.29269e-04	AbsError: 2.00360e-04
+      Equation: "PotentialEquation"	RelError: 3.29269e-04	AbsError: 2.00360e-04
+    Region: "oxide"	RelError: 2.24665e-02	AbsError: 1.37859e-02
+      Equation: "PotentialEquation"	RelError: 2.24665e-02	AbsError: 1.37859e-02
+Iteration: 17
+  Device: "mosfet"	RelError: 2.33814e-04	AbsError: 2.73230e-05
+    Region: "bulk"	RelError: 1.86469e-04	AbsError: 1.28133e-07
+      Equation: "PotentialEquation"	RelError: 1.86469e-04	AbsError: 1.28133e-07
+    Region: "nitride0"	RelError: 1.94742e-06	AbsError: 1.18486e-06
+      Equation: "PotentialEquation"	RelError: 1.94742e-06	AbsError: 1.18486e-06
+    Region: "nitride1"	RelError: 8.70674e-07	AbsError: 5.29896e-07
+      Equation: "PotentialEquation"	RelError: 8.70674e-07	AbsError: 5.29896e-07
+    Region: "oxide"	RelError: 4.45276e-05	AbsError: 2.73230e-05
+      Equation: "PotentialEquation"	RelError: 4.45276e-05	AbsError: 2.73230e-05
+Iteration: 18
+  Device: "mosfet"	RelError: 2.51774e-08	AbsError: 1.48887e-08
+    Region: "bulk"	RelError: 7.61390e-12	AbsError: 4.67197e-12
+      Equation: "PotentialEquation"	RelError: 7.61390e-12	AbsError: 4.67197e-12
+    Region: "nitride0"	RelError: 6.36670e-10	AbsError: 3.87367e-10
+      Equation: "PotentialEquation"	RelError: 6.36670e-10	AbsError: 3.87367e-10
+    Region: "nitride1"	RelError: 2.69260e-10	AbsError: 1.63859e-10
+      Equation: "PotentialEquation"	RelError: 2.69260e-10	AbsError: 1.63859e-10
+    Region: "oxide"	RelError: 2.42638e-08	AbsError: 1.48887e-08
+      Equation: "PotentialEquation"	RelError: 2.42638e-08	AbsError: 1.48887e-08
+Iteration: 19
+  Device: "mosfet"	RelError: 3.99440e-13	AbsError: 5.00919e-14
+    Region: "bulk"	RelError: 3.17515e-13	AbsError: 1.27422e-16
+      Equation: "PotentialEquation"	RelError: 3.17515e-13	AbsError: 1.27422e-16
+    Region: "nitride0"	RelError: 1.08253e-16	AbsError: 6.57990e-17
+      Equation: "PotentialEquation"	RelError: 1.08253e-16	AbsError: 6.57990e-17
+    Region: "nitride1"	RelError: 1.82983e-16	AbsError: 1.11286e-16
+      Equation: "PotentialEquation"	RelError: 1.82983e-16	AbsError: 1.11286e-16
+    Region: "oxide"	RelError: 8.16337e-14	AbsError: 5.00919e-14
+      Equation: "PotentialEquation"	RelError: 8.16337e-14	AbsError: 5.00919e-14
+Warning: Replacing equation with equation of the same name.
+Region: bulk, Equation: PotentialEquation, Variable: Potential
+Replacing Tetrahedron Edge Model ElectricField_x in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_y in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_z in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_x:Potential@en0 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_x:Potential@en1 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_x:Potential@en2 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_x:Potential@en3 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_y:Potential@en0 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_y:Potential@en1 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_y:Potential@en2 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_y:Potential@en3 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_z:Potential@en0 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_z:Potential@en1 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_z:Potential@en2 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_z:Potential@en3 in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_mag in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_mag:Potentialx in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_mag:Potentialy in region bulk of material Silicon
+Replacing Tetrahedron Edge Model ElectricField_mag:Potentialz in region bulk of material Silicon
+Warning: Replacing equation with equation of the same name.
+Region: bulk, Equation: ElectronContinuityEquation, Variable: Electrons
+Warning: Replacing equation with equation of the same name.
+Region: bulk, Equation: HoleContinuityEquation, Variable: Holes
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: source, Equation: ElectronContinuityEquation
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: source, Equation: HoleContinuityEquation
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: drain, Equation: ElectronContinuityEquation
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: drain, Equation: HoleContinuityEquation
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: body, Equation: ElectronContinuityEquation
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: body, Equation: HoleContinuityEquation
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 3.42308e-13	AbsError: 9.71104e+05
+    Region: "bulk"	RelError: 3.41786e-13	AbsError: 9.71104e+05
+      Equation: "ElectronContinuityEquation"	RelError: 1.31692e-13	AbsError: 9.68688e+05
+      Equation: "HoleContinuityEquation"	RelError: 1.13776e-13	AbsError: 2.41618e+03
+      Equation: "PotentialEquation"	RelError: 9.63176e-14	AbsError: 9.90768e-17
+    Region: "nitride0"	RelError: 9.27805e-17	AbsError: 5.63602e-17
+      Equation: "PotentialEquation"	RelError: 9.27805e-17	AbsError: 5.63602e-17
+    Region: "nitride1"	RelError: 9.37766e-17	AbsError: 5.67750e-17
+      Equation: "PotentialEquation"	RelError: 9.37766e-17	AbsError: 5.67750e-17
+    Region: "oxide"	RelError: 3.35880e-16	AbsError: 2.06102e-16
+      Equation: "PotentialEquation"	RelError: 3.35880e-16	AbsError: 2.06102e-16
+gate	0
+source	0.0	-2.743267002876076e-19	5.641888943017086e-41	-2.743267002876076e-19
+drain	0.0	3.1964404274598605e-19	1.4599711513037384e-39	3.1964404274598605e-19
+body	0.0	2.4568504059668228e-33	1.1387094820020963e-22	1.1387094820266649e-22
+gate last end 0.000000e+00 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.16342e+03	AbsError: 1.08583e+19
+    Region: "bulk"	RelError: 1.16291e+03	AbsError: 1.08583e+19
+      Equation: "ElectronContinuityEquation"	RelError: 7.38876e-01	AbsError: 1.08101e+19
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 4.81382e+16
+      Equation: "PotentialEquation"	RelError: 1.63170e+02	AbsError: 3.47680e-02
+    Region: "nitride0"	RelError: 1.40688e-01	AbsError: 9.82748e-02
+      Equation: "PotentialEquation"	RelError: 1.40688e-01	AbsError: 9.82748e-02
+    Region: "nitride1"	RelError: 1.40647e-01	AbsError: 9.82425e-02
+      Equation: "PotentialEquation"	RelError: 1.40647e-01	AbsError: 9.82425e-02
+    Region: "oxide"	RelError: 2.25400e-01	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 2.25400e-01	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 4.73438e+02	AbsError: 1.06703e+18
+    Region: "bulk"	RelError: 4.73376e+02	AbsError: 1.06703e+18
+      Equation: "ElectronContinuityEquation"	RelError: 5.90058e-01	AbsError: 1.06304e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.97936e-01	AbsError: 3.99493e+15
+      Equation: "PotentialEquation"	RelError: 4.71788e+02	AbsError: 2.58870e-02
+    Region: "nitride0"	RelError: 5.89046e-03	AbsError: 3.81880e-03
+      Equation: "PotentialEquation"	RelError: 5.89046e-03	AbsError: 3.81880e-03
+    Region: "nitride1"	RelError: 5.68485e-03	AbsError: 3.67932e-03
+      Equation: "PotentialEquation"	RelError: 5.68485e-03	AbsError: 3.67932e-03
+    Region: "oxide"	RelError: 5.04654e-02	AbsError: 3.26001e-02
+      Equation: "PotentialEquation"	RelError: 5.04654e-02	AbsError: 3.26001e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 6.70365e+03	AbsError: 4.85905e+17
+    Region: "bulk"	RelError: 6.70360e+03	AbsError: 4.85905e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.53252e-01	AbsError: 4.85851e+17
+      Equation: "HoleContinuityEquation"	RelError: 6.70024e+03	AbsError: 5.38899e+13
+      Equation: "PotentialEquation"	RelError: 3.01107e+00	AbsError: 1.48206e-02
+    Region: "nitride0"	RelError: 3.32558e-03	AbsError: 2.14884e-03
+      Equation: "PotentialEquation"	RelError: 3.32558e-03	AbsError: 2.14884e-03
+    Region: "nitride1"	RelError: 2.86974e-03	AbsError: 1.85202e-03
+      Equation: "PotentialEquation"	RelError: 2.86974e-03	AbsError: 1.85202e-03
+    Region: "oxide"	RelError: 4.21785e-02	AbsError: 2.58799e-02
+      Equation: "PotentialEquation"	RelError: 4.21785e-02	AbsError: 2.58799e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.31808e+00	AbsError: 1.81989e+17
+    Region: "bulk"	RelError: 1.29871e+00	AbsError: 1.81989e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.43646e-01	AbsError: 1.81985e+17
+      Equation: "HoleContinuityEquation"	RelError: 9.99490e-01	AbsError: 4.04155e+12
+      Equation: "PotentialEquation"	RelError: 1.55575e-01	AbsError: 2.39567e-05
+    Region: "nitride0"	RelError: 5.12936e-04	AbsError: 3.31402e-04
+      Equation: "PotentialEquation"	RelError: 5.12936e-04	AbsError: 3.31402e-04
+    Region: "nitride1"	RelError: 3.71825e-04	AbsError: 2.39873e-04
+      Equation: "PotentialEquation"	RelError: 3.71825e-04	AbsError: 2.39873e-04
+    Region: "oxide"	RelError: 1.84793e-02	AbsError: 1.13391e-02
+      Equation: "PotentialEquation"	RelError: 1.84793e-02	AbsError: 1.13391e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 1.68283e-04	AbsError: 1.33975e+14
+    Region: "bulk"	RelError: 1.57531e-04	AbsError: 1.33975e+14
+      Equation: "ElectronContinuityEquation"	RelError: 2.88851e-05	AbsError: 1.33975e+14
+      Equation: "HoleContinuityEquation"	RelError: 1.01294e-04	AbsError: 6.02132e+08
+      Equation: "PotentialEquation"	RelError: 2.73519e-05	AbsError: 1.16143e-08
+    Region: "nitride0"	RelError: 7.78352e-07	AbsError: 5.02884e-07
+      Equation: "PotentialEquation"	RelError: 7.78352e-07	AbsError: 5.02884e-07
+    Region: "nitride1"	RelError: 7.13425e-07	AbsError: 4.60247e-07
+      Equation: "PotentialEquation"	RelError: 7.13425e-07	AbsError: 4.60247e-07
+    Region: "oxide"	RelError: 9.26011e-06	AbsError: 5.68218e-06
+      Equation: "PotentialEquation"	RelError: 9.26011e-06	AbsError: 5.68218e-06
+Iteration: 5
+  Device: "mosfet"	RelError: 1.68270e-09	AbsError: 1.81224e+10
+    Region: "bulk"	RelError: 1.87706e-10	AbsError: 1.81224e+10
+      Equation: "ElectronContinuityEquation"	RelError: 9.19378e-11	AbsError: 1.81224e+10
+      Equation: "HoleContinuityEquation"	RelError: 9.18919e-11	AbsError: 1.37967e+02
+      Equation: "PotentialEquation"	RelError: 3.87650e-12	AbsError: 2.37878e-12
+    Region: "nitride0"	RelError: 1.14651e-10	AbsError: 7.40445e-11
+      Equation: "PotentialEquation"	RelError: 1.14651e-10	AbsError: 7.40445e-11
+    Region: "nitride1"	RelError: 1.06704e-10	AbsError: 6.88371e-11
+      Equation: "PotentialEquation"	RelError: 1.06704e-10	AbsError: 6.88371e-11
+    Region: "oxide"	RelError: 1.27364e-09	AbsError: 7.81530e-10
+      Equation: "PotentialEquation"	RelError: 1.27364e-09	AbsError: 7.81530e-10
+Succeeded
+gate	0.1
+source	0.0	-1.1240794134145021e-19	7.928502360303886e-40	-1.1240794134145021e-19
+drain	0.0	3.874585787149283e-19	2.262754050226158e-39	3.874585787149283e-19
+body	0.0	5.642250460685676e-34	2.3876637105736744e-23	2.387663710630097e-23
+gate last end 1.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 6.71779e+03	AbsError: 1.14563e+19
+    Region: "bulk"	RelError: 6.71736e+03	AbsError: 1.14563e+19
+      Equation: "ElectronContinuityEquation"	RelError: 7.38056e-01	AbsError: 1.14102e+19
+      Equation: "HoleContinuityEquation"	RelError: 6.33005e+03	AbsError: 4.60390e+16
+      Equation: "PotentialEquation"	RelError: 3.86573e+02	AbsError: 3.46868e-02
+    Region: "nitride0"	RelError: 1.23357e-01	AbsError: 9.82727e-02
+      Equation: "PotentialEquation"	RelError: 1.23357e-01	AbsError: 9.82727e-02
+    Region: "nitride1"	RelError: 1.23325e-01	AbsError: 9.82403e-02
+      Equation: "PotentialEquation"	RelError: 1.23325e-01	AbsError: 9.82403e-02
+    Region: "oxide"	RelError: 1.83297e-01	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 1.83297e-01	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 3.47447e+02	AbsError: 1.16650e+18
+    Region: "bulk"	RelError: 3.47385e+02	AbsError: 1.16650e+18
+      Equation: "ElectronContinuityEquation"	RelError: 5.86472e-01	AbsError: 1.16282e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99568e-01	AbsError: 3.67705e+15
+      Equation: "PotentialEquation"	RelError: 3.45799e+02	AbsError: 2.58966e-02
+    Region: "nitride0"	RelError: 5.69059e-03	AbsError: 3.90039e-03
+      Equation: "PotentialEquation"	RelError: 5.69059e-03	AbsError: 3.90039e-03
+    Region: "nitride1"	RelError: 5.42958e-03	AbsError: 3.71153e-03
+      Equation: "PotentialEquation"	RelError: 5.42958e-03	AbsError: 3.71153e-03
+    Region: "oxide"	RelError: 5.08388e-02	AbsError: 3.28129e-02
+      Equation: "PotentialEquation"	RelError: 5.08388e-02	AbsError: 3.28129e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 1.60106e+04	AbsError: 4.82885e+17
+    Region: "bulk"	RelError: 1.60106e+04	AbsError: 4.82885e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.44959e-01	AbsError: 4.82681e+17
+      Equation: "HoleContinuityEquation"	RelError: 1.60092e+04	AbsError: 2.03765e+14
+      Equation: "PotentialEquation"	RelError: 1.02216e+00	AbsError: 1.42605e-02
+    Region: "nitride0"	RelError: 3.07481e-03	AbsError: 2.10279e-03
+      Equation: "PotentialEquation"	RelError: 3.07481e-03	AbsError: 2.10279e-03
+    Region: "nitride1"	RelError: 2.63988e-03	AbsError: 1.79980e-03
+      Equation: "PotentialEquation"	RelError: 2.63988e-03	AbsError: 1.79980e-03
+    Region: "oxide"	RelError: 4.25578e-02	AbsError: 2.61054e-02
+      Equation: "PotentialEquation"	RelError: 4.25578e-02	AbsError: 2.61054e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.29655e+00	AbsError: 1.73023e+17
+    Region: "bulk"	RelError: 1.27819e+00	AbsError: 1.73023e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.33240e-01	AbsError: 1.72979e+17
+      Equation: "HoleContinuityEquation"	RelError: 9.99787e-01	AbsError: 4.39453e+13
+      Equation: "PotentialEquation"	RelError: 1.45165e-01	AbsError: 9.66482e-05
+    Region: "nitride0"	RelError: 3.16637e-04	AbsError: 2.17709e-04
+      Equation: "PotentialEquation"	RelError: 3.16637e-04	AbsError: 2.17709e-04
+    Region: "nitride1"	RelError: 2.70711e-04	AbsError: 1.84514e-04
+      Equation: "PotentialEquation"	RelError: 2.70711e-04	AbsError: 1.84514e-04
+    Region: "oxide"	RelError: 1.77723e-02	AbsError: 1.09042e-02
+      Equation: "PotentialEquation"	RelError: 1.77723e-02	AbsError: 1.09042e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 1.82883e-03	AbsError: 1.56213e+15
+    Region: "bulk"	RelError: 1.70174e-03	AbsError: 1.56213e+15
+      Equation: "ElectronContinuityEquation"	RelError: 3.16042e-04	AbsError: 1.56206e+15
+      Equation: "HoleContinuityEquation"	RelError: 1.14958e-03	AbsError: 6.98931e+10
+      Equation: "PotentialEquation"	RelError: 2.36119e-04	AbsError: 1.94887e-07
+    Region: "nitride0"	RelError: 8.29345e-06	AbsError: 5.67007e-06
+      Equation: "PotentialEquation"	RelError: 8.29345e-06	AbsError: 5.67007e-06
+    Region: "nitride1"	RelError: 7.71587e-06	AbsError: 5.25910e-06
+      Equation: "PotentialEquation"	RelError: 7.71587e-06	AbsError: 5.25910e-06
+    Region: "oxide"	RelError: 1.11079e-04	AbsError: 6.81599e-05
+      Equation: "PotentialEquation"	RelError: 1.11079e-04	AbsError: 6.81599e-05
+Iteration: 5
+  Device: "mosfet"	RelError: 2.30965e-07	AbsError: 2.58224e+12
+    Region: "bulk"	RelError: 2.68871e-08	AbsError: 2.58224e+12
+      Equation: "ElectronContinuityEquation"	RelError: 1.30835e-08	AbsError: 2.58224e+12
+      Equation: "HoleContinuityEquation"	RelError: 1.31390e-08	AbsError: 1.94645e+05
+      Equation: "PotentialEquation"	RelError: 6.64514e-10	AbsError: 3.39432e-10
+    Region: "nitride0"	RelError: 1.29908e-08	AbsError: 8.87421e-09
+      Equation: "PotentialEquation"	RelError: 1.29908e-08	AbsError: 8.87421e-09
+    Region: "nitride1"	RelError: 1.21321e-08	AbsError: 8.26919e-09
+      Equation: "PotentialEquation"	RelError: 1.21321e-08	AbsError: 8.26919e-09
+    Region: "oxide"	RelError: 1.78955e-07	AbsError: 1.09810e-07
+      Equation: "PotentialEquation"	RelError: 1.78955e-07	AbsError: 1.09810e-07
+Succeeded
+gate	0.2
+source	0.0	3.780423903625622e-19	1.2970199854060548e-39	3.780423903625622e-19
+drain	0.0	7.94346030037342e-19	3.7633453607672726e-39	7.94346030037342e-19
+body	0.0	-1.4387824977787712e-33	-6.805100773735245e-23	-6.805100773879123e-23
+gate last end 2.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 2.66608e+03	AbsError: 1.19845e+19
+    Region: "bulk"	RelError: 2.66571e+03	AbsError: 1.19845e+19
+      Equation: "ElectronContinuityEquation"	RelError: 7.31789e-01	AbsError: 1.19419e+19
+      Equation: "HoleContinuityEquation"	RelError: 2.54959e+03	AbsError: 4.25994e+16
+      Equation: "PotentialEquation"	RelError: 1.15383e+02	AbsError: 3.40746e-02
+    Region: "nitride0"	RelError: 1.09822e-01	AbsError: 9.82660e-02
+      Equation: "PotentialEquation"	RelError: 1.09822e-01	AbsError: 9.82660e-02
+    Region: "nitride1"	RelError: 1.09797e-01	AbsError: 9.82336e-02
+      Equation: "PotentialEquation"	RelError: 1.09797e-01	AbsError: 9.82336e-02
+    Region: "oxide"	RelError: 1.51404e-01	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 1.51404e-01	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 9.98568e+01	AbsError: 1.28670e+18
+    Region: "bulk"	RelError: 9.97919e+01	AbsError: 1.28670e+18
+      Equation: "ElectronContinuityEquation"	RelError: 5.55674e-01	AbsError: 1.28249e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.98963e-01	AbsError: 4.20915e+15
+      Equation: "PotentialEquation"	RelError: 9.82373e+01	AbsError: 2.58926e-02
+    Region: "nitride0"	RelError: 5.56141e-03	AbsError: 4.01693e-03
+      Equation: "PotentialEquation"	RelError: 5.56141e-03	AbsError: 4.01693e-03
+    Region: "nitride1"	RelError: 5.28696e-03	AbsError: 3.80497e-03
+      Equation: "PotentialEquation"	RelError: 5.28696e-03	AbsError: 3.80497e-03
+    Region: "oxide"	RelError: 5.40517e-02	AbsError: 3.46772e-02
+      Equation: "PotentialEquation"	RelError: 5.40517e-02	AbsError: 3.46772e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 8.91245e+01	AbsError: 6.01441e+17
+    Region: "bulk"	RelError: 8.90751e+01	AbsError: 6.01441e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.73116e-01	AbsError: 6.00402e+17
+      Equation: "HoleContinuityEquation"	RelError: 7.63317e+01	AbsError: 1.03877e+15
+      Equation: "PotentialEquation"	RelError: 1.24703e+01	AbsError: 1.02575e-02
+    Region: "nitride0"	RelError: 2.81642e-03	AbsError: 2.03100e-03
+      Equation: "PotentialEquation"	RelError: 2.81642e-03	AbsError: 2.03100e-03
+    Region: "nitride1"	RelError: 2.33144e-03	AbsError: 1.67401e-03
+      Equation: "PotentialEquation"	RelError: 2.33144e-03	AbsError: 1.67401e-03
+    Region: "oxide"	RelError: 4.43054e-02	AbsError: 2.71260e-02
+      Equation: "PotentialEquation"	RelError: 4.43054e-02	AbsError: 2.71260e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.98052e+00	AbsError: 1.18837e+17
+    Region: "bulk"	RelError: 1.96758e+00	AbsError: 1.18837e+17
+      Equation: "ElectronContinuityEquation"	RelError: 7.56388e-02	AbsError: 1.18633e+17
+      Equation: "HoleContinuityEquation"	RelError: 9.56457e-01	AbsError: 2.03127e+14
+      Equation: "PotentialEquation"	RelError: 9.35485e-01	AbsError: 5.30352e-04
+    Region: "nitride0"	RelError: 1.61526e-04	AbsError: 1.16360e-04
+      Equation: "PotentialEquation"	RelError: 1.61526e-04	AbsError: 1.16360e-04
+    Region: "nitride1"	RelError: 4.40944e-05	AbsError: 3.18008e-05
+      Equation: "PotentialEquation"	RelError: 4.40944e-05	AbsError: 3.18008e-05
+    Region: "oxide"	RelError: 1.27312e-02	AbsError: 7.80751e-03
+      Equation: "PotentialEquation"	RelError: 1.27312e-02	AbsError: 7.80751e-03
+Iteration: 4
+  Device: "mosfet"	RelError: 1.27080e-02	AbsError: 8.21430e+15
+    Region: "bulk"	RelError: 1.20412e-02	AbsError: 8.21430e+15
+      Equation: "ElectronContinuityEquation"	RelError: 7.70467e-04	AbsError: 8.21281e+15
+      Equation: "HoleContinuityEquation"	RelError: 4.50874e-03	AbsError: 1.49067e+12
+      Equation: "PotentialEquation"	RelError: 6.76195e-03	AbsError: 4.99734e-06
+    Region: "nitride0"	RelError: 3.76569e-05	AbsError: 2.71609e-05
+      Equation: "PotentialEquation"	RelError: 3.76569e-05	AbsError: 2.71609e-05
+    Region: "nitride1"	RelError: 3.51710e-05	AbsError: 2.52552e-05
+      Equation: "PotentialEquation"	RelError: 3.51710e-05	AbsError: 2.52552e-05
+    Region: "oxide"	RelError: 5.94055e-04	AbsError: 3.64525e-04
+      Equation: "PotentialEquation"	RelError: 5.94055e-04	AbsError: 3.64525e-04
+Iteration: 5
+  Device: "mosfet"	RelError: 6.00614e-06	AbsError: 6.34180e+13
+    Region: "bulk"	RelError: 1.02249e-06	AbsError: 6.34180e+13
+      Equation: "ElectronContinuityEquation"	RelError: 3.20916e-07	AbsError: 6.34179e+13
+      Equation: "HoleContinuityEquation"	RelError: 3.22642e-07	AbsError: 8.62800e+07
+      Equation: "PotentialEquation"	RelError: 3.78934e-07	AbsError: 8.32995e-09
+    Region: "nitride0"	RelError: 2.72640e-07	AbsError: 1.96625e-07
+      Equation: "PotentialEquation"	RelError: 2.72640e-07	AbsError: 1.96625e-07
+    Region: "nitride1"	RelError: 2.52355e-07	AbsError: 1.81208e-07
+      Equation: "PotentialEquation"	RelError: 2.52355e-07	AbsError: 1.81208e-07
+    Region: "oxide"	RelError: 4.45866e-06	AbsError: 2.73591e-06
+      Equation: "PotentialEquation"	RelError: 4.45866e-06	AbsError: 2.73591e-06
+Succeeded
+gate	0.3
+source	0.0	-6.869317832938012e-19	-2.171831712135013e-39	-6.869317832938012e-19
+drain	0.0	-1.5567564042265483e-18	3.199755935669486e-39	-1.5567564042265483e-18
+body	0.0	-4.505025560334954e-35	-2.700335788286033e-24	-2.700335788331083e-24
+gate last end 3.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 2.75735e+03	AbsError: 1.24443e+19
+    Region: "bulk"	RelError: 2.75704e+03	AbsError: 1.24443e+19
+      Equation: "ElectronContinuityEquation"	RelError: 6.87527e-01	AbsError: 1.24116e+19
+      Equation: "HoleContinuityEquation"	RelError: 2.53560e+03	AbsError: 3.26606e+16
+      Equation: "PotentialEquation"	RelError: 2.20752e+02	AbsError: 3.01190e-02
+    Region: "nitride0"	RelError: 9.89424e-02	AbsError: 9.82368e-02
+      Equation: "PotentialEquation"	RelError: 9.89424e-02	AbsError: 9.82368e-02
+    Region: "nitride1"	RelError: 9.89217e-02	AbsError: 9.82049e-02
+      Equation: "PotentialEquation"	RelError: 9.89217e-02	AbsError: 9.82049e-02
+    Region: "oxide"	RelError: 1.11127e-01	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 1.11127e-01	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 4.09800e+01	AbsError: 2.56661e+18
+    Region: "bulk"	RelError: 4.09089e+01	AbsError: 2.56661e+18
+      Equation: "ElectronContinuityEquation"	RelError: 3.86128e-01	AbsError: 2.55967e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99053e-01	AbsError: 6.94064e+15
+      Equation: "PotentialEquation"	RelError: 3.95237e+01	AbsError: 1.70051e-02
+    Region: "nitride0"	RelError: 5.39834e-03	AbsError: 4.09336e-03
+      Equation: "PotentialEquation"	RelError: 5.39834e-03	AbsError: 4.09336e-03
+    Region: "nitride1"	RelError: 5.14625e-03	AbsError: 3.88515e-03
+      Equation: "PotentialEquation"	RelError: 5.14625e-03	AbsError: 3.88515e-03
+    Region: "oxide"	RelError: 6.05513e-02	AbsError: 3.78928e-02
+      Equation: "PotentialEquation"	RelError: 6.05513e-02	AbsError: 3.78928e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 4.08401e+00	AbsError: 4.75922e+17
+    Region: "bulk"	RelError: 4.05816e+00	AbsError: 4.75922e+17
+      Equation: "ElectronContinuityEquation"	RelError: 9.88215e-02	AbsError: 4.74876e+17
+      Equation: "HoleContinuityEquation"	RelError: 9.89680e-01	AbsError: 1.04635e+15
+      Equation: "PotentialEquation"	RelError: 2.96966e+00	AbsError: 1.95258e-03
+    Region: "nitride0"	RelError: 9.53400e-04	AbsError: 7.23358e-04
+      Equation: "PotentialEquation"	RelError: 9.53400e-04	AbsError: 7.23358e-04
+    Region: "nitride1"	RelError: 7.20460e-04	AbsError: 5.46312e-04
+      Equation: "PotentialEquation"	RelError: 7.20460e-04	AbsError: 5.46312e-04
+    Region: "oxide"	RelError: 2.41780e-02	AbsError: 1.47985e-02
+      Equation: "PotentialEquation"	RelError: 2.41780e-02	AbsError: 1.47985e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 8.08722e-02	AbsError: 3.86821e+16
+    Region: "bulk"	RelError: 7.76258e-02	AbsError: 3.86821e+16
+      Equation: "ElectronContinuityEquation"	RelError: 1.89134e-03	AbsError: 3.86621e+16
+      Equation: "HoleContinuityEquation"	RelError: 2.05729e-02	AbsError: 2.00660e+13
+      Equation: "PotentialEquation"	RelError: 5.51616e-02	AbsError: 4.46541e-05
+    Region: "nitride0"	RelError: 1.99353e-04	AbsError: 1.51268e-04
+      Equation: "PotentialEquation"	RelError: 1.99353e-04	AbsError: 1.51268e-04
+    Region: "nitride1"	RelError: 1.84166e-04	AbsError: 1.38961e-04
+      Equation: "PotentialEquation"	RelError: 1.84166e-04	AbsError: 1.38961e-04
+    Region: "oxide"	RelError: 2.86292e-03	AbsError: 1.75684e-03
+      Equation: "PotentialEquation"	RelError: 2.86292e-03	AbsError: 1.75684e-03
+Iteration: 4
+  Device: "mosfet"	RelError: 9.87003e-05	AbsError: 7.90905e+14
+    Region: "bulk"	RelError: 3.36178e-05	AbsError: 7.90905e+14
+      Equation: "ElectronContinuityEquation"	RelError: 3.99714e-06	AbsError: 7.90897e+14
+      Equation: "HoleContinuityEquation"	RelError: 8.31226e-06	AbsError: 7.62849e+09
+      Equation: "PotentialEquation"	RelError: 2.13084e-05	AbsError: 1.03966e-07
+    Region: "nitride0"	RelError: 3.73186e-06	AbsError: 2.83197e-06
+      Equation: "PotentialEquation"	RelError: 3.73186e-06	AbsError: 2.83197e-06
+    Region: "nitride1"	RelError: 3.44961e-06	AbsError: 2.60287e-06
+      Equation: "PotentialEquation"	RelError: 3.44961e-06	AbsError: 2.60287e-06
+    Region: "oxide"	RelError: 5.79011e-05	AbsError: 3.55292e-05
+      Equation: "PotentialEquation"	RelError: 5.79011e-05	AbsError: 3.55292e-05
+Iteration: 5
+  Device: "mosfet"	RelError: 2.97369e-08	AbsError: 3.28940e+11
+    Region: "bulk"	RelError: 3.41150e-09	AbsError: 3.28940e+11
+      Equation: "ElectronContinuityEquation"	RelError: 1.66244e-09	AbsError: 3.28940e+11
+      Equation: "HoleContinuityEquation"	RelError: 1.67860e-09	AbsError: 1.20426e+03
+      Equation: "PotentialEquation"	RelError: 7.04608e-11	AbsError: 4.32446e-11
+    Region: "nitride0"	RelError: 1.40363e-09	AbsError: 1.06516e-09
+      Equation: "PotentialEquation"	RelError: 1.40363e-09	AbsError: 1.06516e-09
+    Region: "nitride1"	RelError: 1.28908e-09	AbsError: 9.72664e-10
+      Equation: "PotentialEquation"	RelError: 1.28908e-09	AbsError: 9.72664e-10
+    Region: "oxide"	RelError: 2.36327e-08	AbsError: 1.45015e-08
+      Equation: "PotentialEquation"	RelError: 2.36327e-08	AbsError: 1.45015e-08
+Succeeded
+gate	0.4
+source	0.0	-3.2907102306676867e-19	-1.3448556265176948e-39	-3.2907102306676867e-19
+drain	0.0	-2.3788894374690834e-19	-3.2483921985979395e-40	-2.3788894374690834e-19
+body	0.0	-2.410127209177865e-34	-4.56240477484394e-24	-4.562404775084953e-24
+gate last end 4.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 5.03511e+03	AbsError: 1.28441e+19
+    Region: "bulk"	RelError: 5.03484e+03	AbsError: 1.28441e+19
+      Equation: "ElectronContinuityEquation"	RelError: 5.70734e-01	AbsError: 1.28264e+19
+      Equation: "HoleContinuityEquation"	RelError: 4.93296e+03	AbsError: 1.76906e+16
+      Equation: "PotentialEquation"	RelError: 1.01303e+02	AbsError: 2.58959e-02
+    Region: "nitride0"	RelError: 9.00025e-02	AbsError: 9.81877e-02
+      Equation: "PotentialEquation"	RelError: 9.00025e-02	AbsError: 9.81877e-02
+    Region: "nitride1"	RelError: 8.99863e-02	AbsError: 9.81572e-02
+      Equation: "PotentialEquation"	RelError: 8.99863e-02	AbsError: 9.81572e-02
+    Region: "oxide"	RelError: 9.09091e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 9.09091e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 7.58349e+01	AbsError: 1.97618e+18
+    Region: "bulk"	RelError: 7.57752e+01	AbsError: 1.97618e+18
+      Equation: "ElectronContinuityEquation"	RelError: 1.59973e-01	AbsError: 1.97186e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99531e-01	AbsError: 4.31443e+15
+      Equation: "PotentialEquation"	RelError: 7.46157e+01	AbsError: 6.64871e-03
+    Region: "nitride0"	RelError: 3.91562e-03	AbsError: 3.11094e-03
+      Equation: "PotentialEquation"	RelError: 3.91562e-03	AbsError: 3.11094e-03
+    Region: "nitride1"	RelError: 3.58766e-03	AbsError: 2.83637e-03
+      Equation: "PotentialEquation"	RelError: 3.58766e-03	AbsError: 2.83637e-03
+    Region: "oxide"	RelError: 5.21943e-02	AbsError: 3.17083e-02
+      Equation: "PotentialEquation"	RelError: 5.21943e-02	AbsError: 3.17083e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 1.99680e+00	AbsError: 2.11286e+17
+    Region: "bulk"	RelError: 1.98644e+00	AbsError: 2.11286e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.22279e-02	AbsError: 2.11022e+17
+      Equation: "HoleContinuityEquation"	RelError: 3.94449e-01	AbsError: 2.63706e+14
+      Equation: "PotentialEquation"	RelError: 1.56976e+00	AbsError: 5.21158e-04
+    Region: "nitride0"	RelError: 5.70193e-04	AbsError: 4.53340e-04
+      Equation: "PotentialEquation"	RelError: 5.70193e-04	AbsError: 4.53340e-04
+    Region: "nitride1"	RelError: 4.93874e-04	AbsError: 3.90644e-04
+      Equation: "PotentialEquation"	RelError: 4.93874e-04	AbsError: 3.90644e-04
+    Region: "oxide"	RelError: 9.29698e-03	AbsError: 5.70096e-03
+      Equation: "PotentialEquation"	RelError: 9.29698e-03	AbsError: 5.70096e-03
+Iteration: 3
+  Device: "mosfet"	RelError: 8.33297e-03	AbsError: 9.58634e+15
+    Region: "bulk"	RelError: 7.46238e-03	AbsError: 9.58634e+15
+      Equation: "ElectronContinuityEquation"	RelError: 8.74828e-05	AbsError: 9.58530e+15
+      Equation: "HoleContinuityEquation"	RelError: 7.99640e-04	AbsError: 1.04590e+12
+      Equation: "PotentialEquation"	RelError: 6.57526e-03	AbsError: 2.34079e-06
+    Region: "nitride0"	RelError: 4.79197e-05	AbsError: 3.81659e-05
+      Equation: "PotentialEquation"	RelError: 4.79197e-05	AbsError: 3.81659e-05
+    Region: "nitride1"	RelError: 4.41329e-05	AbsError: 3.49097e-05
+      Equation: "PotentialEquation"	RelError: 4.41329e-05	AbsError: 3.49097e-05
+    Region: "oxide"	RelError: 7.78538e-04	AbsError: 4.77727e-04
+      Equation: "PotentialEquation"	RelError: 7.78538e-04	AbsError: 4.77727e-04
+Iteration: 4
+  Device: "mosfet"	RelError: 4.31293e-06	AbsError: 3.96185e+13
+    Region: "bulk"	RelError: 5.08294e-07	AbsError: 3.96185e+13
+      Equation: "ElectronContinuityEquation"	RelError: 1.99976e-07	AbsError: 3.96185e+13
+      Equation: "HoleContinuityEquation"	RelError: 2.02297e-07	AbsError: 1.63532e+07
+      Equation: "PotentialEquation"	RelError: 1.06021e-07	AbsError: 5.20686e-09
+    Region: "nitride0"	RelError: 1.99099e-07	AbsError: 1.58573e-07
+      Equation: "PotentialEquation"	RelError: 1.99099e-07	AbsError: 1.58573e-07
+    Region: "nitride1"	RelError: 1.81997e-07	AbsError: 1.43962e-07
+      Equation: "PotentialEquation"	RelError: 1.81997e-07	AbsError: 1.43962e-07
+    Region: "oxide"	RelError: 3.42354e-06	AbsError: 2.10074e-06
+      Equation: "PotentialEquation"	RelError: 3.42354e-06	AbsError: 2.10074e-06
+Succeeded
+gate	0.5
+source	0.0	-8.092328299670917e-19	-2.5085787394758944e-39	-8.092328299670917e-19
+drain	0.0	-7.231977133233751e-19	3.690697033361072e-40	-7.231977133233751e-19
+body	0.0	2.066082413060874e-33	1.0667142063099002e-22	1.066714206330561e-22
+gate last end 5.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.05192e+02	AbsError: 1.32024e+19
+    Region: "bulk"	RelError: 1.04944e+02	AbsError: 1.32024e+19
+      Equation: "ElectronContinuityEquation"	RelError: 4.45699e-01	AbsError: 1.31927e+19
+      Equation: "HoleContinuityEquation"	RelError: 4.10396e+00	AbsError: 9.68581e+15
+      Equation: "PotentialEquation"	RelError: 1.00394e+02	AbsError: 2.08152e-02
+    Region: "nitride0"	RelError: 8.25539e-02	AbsError: 9.81600e-02
+      Equation: "PotentialEquation"	RelError: 8.25539e-02	AbsError: 9.81600e-02
+    Region: "nitride1"	RelError: 8.25407e-02	AbsError: 9.81304e-02
+      Equation: "PotentialEquation"	RelError: 8.25407e-02	AbsError: 9.81304e-02
+    Region: "oxide"	RelError: 8.33333e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 8.33333e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 2.42970e+01	AbsError: 1.44610e+18
+    Region: "bulk"	RelError: 2.42593e+01	AbsError: 1.44610e+18
+      Equation: "ElectronContinuityEquation"	RelError: 7.16472e-02	AbsError: 1.44403e+18
+      Equation: "HoleContinuityEquation"	RelError: 6.12527e-01	AbsError: 2.06910e+15
+      Equation: "PotentialEquation"	RelError: 2.35752e+01	AbsError: 3.87672e-03
+    Region: "nitride0"	RelError: 2.12669e-03	AbsError: 1.76934e-03
+      Equation: "PotentialEquation"	RelError: 2.12669e-03	AbsError: 1.76934e-03
+    Region: "nitride1"	RelError: 1.96781e-03	AbsError: 1.62778e-03
+      Equation: "PotentialEquation"	RelError: 1.96781e-03	AbsError: 1.62778e-03
+    Region: "oxide"	RelError: 3.35342e-02	AbsError: 2.04579e-02
+      Equation: "PotentialEquation"	RelError: 3.35342e-02	AbsError: 2.04579e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 6.46623e-01	AbsError: 7.03211e+16
+    Region: "bulk"	RelError: 6.39995e-01	AbsError: 7.03211e+16
+      Equation: "ElectronContinuityEquation"	RelError: 3.58531e-03	AbsError: 7.02869e+16
+      Equation: "HoleContinuityEquation"	RelError: 2.29862e-02	AbsError: 3.41613e+13
+      Equation: "PotentialEquation"	RelError: 6.13424e-01	AbsError: 7.40416e-05
+    Region: "nitride0"	RelError: 3.75056e-04	AbsError: 3.12202e-04
+      Equation: "PotentialEquation"	RelError: 3.75056e-04	AbsError: 3.12202e-04
+    Region: "nitride1"	RelError: 3.46514e-04	AbsError: 2.86738e-04
+      Equation: "PotentialEquation"	RelError: 3.46514e-04	AbsError: 2.86738e-04
+    Region: "oxide"	RelError: 5.90627e-03	AbsError: 3.62459e-03
+      Equation: "PotentialEquation"	RelError: 5.90627e-03	AbsError: 3.62459e-03
+Iteration: 3
+  Device: "mosfet"	RelError: 3.21004e-04	AbsError: 1.22387e+15
+    Region: "bulk"	RelError: 2.01108e-04	AbsError: 1.22387e+15
+      Equation: "ElectronContinuityEquation"	RelError: 6.16969e-06	AbsError: 1.22386e+15
+      Equation: "HoleContinuityEquation"	RelError: 1.98283e-05	AbsError: 9.80444e+09
+      Equation: "PotentialEquation"	RelError: 1.75110e-04	AbsError: 1.61333e-07
+    Region: "nitride0"	RelError: 6.21904e-06	AbsError: 5.18696e-06
+      Equation: "PotentialEquation"	RelError: 6.21904e-06	AbsError: 5.18696e-06
+    Region: "nitride1"	RelError: 5.71344e-06	AbsError: 4.72780e-06
+      Equation: "PotentialEquation"	RelError: 5.71344e-06	AbsError: 4.72780e-06
+    Region: "oxide"	RelError: 1.07963e-04	AbsError: 6.62484e-05
+      Equation: "PotentialEquation"	RelError: 1.07963e-04	AbsError: 6.62484e-05
+Iteration: 4
+  Device: "mosfet"	RelError: 4.70337e-08	AbsError: 3.85701e+11
+    Region: "bulk"	RelError: 4.01062e-09	AbsError: 3.85701e+11
+      Equation: "ElectronContinuityEquation"	RelError: 1.94439e-09	AbsError: 3.85701e+11
+      Equation: "HoleContinuityEquation"	RelError: 1.98340e-09	AbsError: 1.03053e+03
+      Equation: "PotentialEquation"	RelError: 8.28226e-11	AbsError: 5.08370e-11
+    Region: "nitride0"	RelError: 1.90055e-09	AbsError: 1.58515e-09
+      Equation: "PotentialEquation"	RelError: 1.90055e-09	AbsError: 1.58515e-09
+    Region: "nitride1"	RelError: 1.72485e-09	AbsError: 1.42729e-09
+      Equation: "PotentialEquation"	RelError: 1.72485e-09	AbsError: 1.42729e-09
+    Region: "oxide"	RelError: 3.93977e-08	AbsError: 2.41752e-08
+      Equation: "PotentialEquation"	RelError: 3.93977e-08	AbsError: 2.41752e-08
+Succeeded
+gate	0.6
+source	0.0	-3.3738160953784476e-21	5.477598155329494e-41	-3.3738160953784476e-21
+drain	0.0	-4.461086237784157e-19	-2.6946309093318188e-39	-4.461086237784157e-19
+body	0.0	-6.154086226477264e-34	-3.960141371552771e-23	-3.960141371614312e-23
+gate last end 6.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.59685e+02	AbsError: 1.38384e+19
+    Region: "bulk"	RelError: 1.59455e+02	AbsError: 1.38384e+19
+      Equation: "ElectronContinuityEquation"	RelError: 3.52688e-01	AbsError: 1.38323e+19
+      Equation: "HoleContinuityEquation"	RelError: 1.19707e+00	AbsError: 6.05402e+15
+      Equation: "PotentialEquation"	RelError: 1.57906e+02	AbsError: 1.41046e-02
+    Region: "nitride0"	RelError: 7.62513e-02	AbsError: 9.81472e-02
+      Equation: "PotentialEquation"	RelError: 7.62513e-02	AbsError: 9.81472e-02
+    Region: "nitride1"	RelError: 7.62403e-02	AbsError: 9.81179e-02
+      Equation: "PotentialEquation"	RelError: 7.62403e-02	AbsError: 9.81179e-02
+    Region: "oxide"	RelError: 7.69231e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 7.69231e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 1.00626e+01	AbsError: 9.82813e+17
+    Region: "bulk"	RelError: 1.00398e+01	AbsError: 9.82813e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.38481e-02	AbsError: 9.81781e+17
+      Equation: "HoleContinuityEquation"	RelError: 2.69362e-01	AbsError: 1.03165e+15
+      Equation: "PotentialEquation"	RelError: 9.73663e+00	AbsError: 2.03721e-03
+    Region: "nitride0"	RelError: 1.23956e-03	AbsError: 1.07768e-03
+      Equation: "PotentialEquation"	RelError: 1.23956e-03	AbsError: 1.07768e-03
+    Region: "nitride1"	RelError: 1.14877e-03	AbsError: 9.92326e-04
+      Equation: "PotentialEquation"	RelError: 1.14877e-03	AbsError: 9.92326e-04
+    Region: "oxide"	RelError: 2.03490e-02	AbsError: 1.24496e-02
+      Equation: "PotentialEquation"	RelError: 2.03490e-02	AbsError: 1.24496e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 7.27366e-02	AbsError: 3.41473e+16
+    Region: "bulk"	RelError: 6.94068e-02	AbsError: 3.41473e+16
+      Equation: "ElectronContinuityEquation"	RelError: 9.97107e-04	AbsError: 3.41402e+16
+      Equation: "HoleContinuityEquation"	RelError: 5.63296e-03	AbsError: 7.07949e+12
+      Equation: "PotentialEquation"	RelError: 6.27767e-02	AbsError: 1.58752e-05
+    Region: "nitride0"	RelError: 1.79894e-04	AbsError: 1.56429e-04
+      Equation: "PotentialEquation"	RelError: 1.79894e-04	AbsError: 1.56429e-04
+    Region: "nitride1"	RelError: 1.66171e-04	AbsError: 1.43565e-04
+      Equation: "PotentialEquation"	RelError: 1.66171e-04	AbsError: 1.43565e-04
+    Region: "oxide"	RelError: 2.98379e-03	AbsError: 1.83095e-03
+      Equation: "PotentialEquation"	RelError: 2.98379e-03	AbsError: 1.83095e-03
+Iteration: 3
+  Device: "mosfet"	RelError: 3.04810e-05	AbsError: 2.46744e+14
+    Region: "bulk"	RelError: 5.28423e-06	AbsError: 2.46744e+14
+      Equation: "ElectronContinuityEquation"	RelError: 1.24231e-06	AbsError: 2.46743e+14
+      Equation: "HoleContinuityEquation"	RelError: 1.27193e-06	AbsError: 3.10143e+08
+      Equation: "PotentialEquation"	RelError: 2.76999e-06	AbsError: 3.25399e-08
+    Region: "nitride0"	RelError: 1.25626e-06	AbsError: 1.09500e-06
+      Equation: "PotentialEquation"	RelError: 1.25626e-06	AbsError: 1.09500e-06
+    Region: "nitride1"	RelError: 1.15228e-06	AbsError: 9.95520e-07
+      Equation: "PotentialEquation"	RelError: 1.15228e-06	AbsError: 9.95520e-07
+    Region: "oxide"	RelError: 2.27882e-05	AbsError: 1.39833e-05
+      Equation: "PotentialEquation"	RelError: 2.27882e-05	AbsError: 1.39833e-05
+Iteration: 4
+  Device: "mosfet"	RelError: 1.58827e-09	AbsError: 1.18978e+10
+    Region: "bulk"	RelError: 1.23953e-10	AbsError: 1.18978e+10
+      Equation: "ElectronContinuityEquation"	RelError: 5.99035e-11	AbsError: 1.18978e+10
+      Equation: "HoleContinuityEquation"	RelError: 6.14904e-11	AbsError: 1.38084e+02
+      Equation: "PotentialEquation"	RelError: 2.55948e-12	AbsError: 1.57111e-12
+    Region: "nitride0"	RelError: 6.02622e-11	AbsError: 5.25267e-11
+      Equation: "PotentialEquation"	RelError: 6.02622e-11	AbsError: 5.25267e-11
+    Region: "nitride1"	RelError: 5.39365e-11	AbsError: 4.65990e-11
+      Equation: "PotentialEquation"	RelError: 5.39365e-11	AbsError: 4.65990e-11
+    Region: "oxide"	RelError: 1.35012e-09	AbsError: 8.28459e-10
+      Equation: "PotentialEquation"	RelError: 1.35012e-09	AbsError: 8.28459e-10
+Succeeded
+gate	0.7
+source	0.0	-1.1342174795817478e-18	-5.575372727449084e-39	-1.1342174795817478e-18
+drain	0.0	-3.835483947859899e-19	-1.782181080185108e-39	-3.835483947859899e-19
+body	0.0	-1.8491029479776911e-34	-4.795885312827628e-24	-4.795885313012539e-24
+gate last end 7.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.19256e+01	AbsError: 1.56804e+19
+    Region: "bulk"	RelError: 1.17125e+01	AbsError: 1.56804e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.87412e-01	AbsError: 1.56762e+19
+      Equation: "HoleContinuityEquation"	RelError: 6.75983e-01	AbsError: 4.18849e+15
+      Equation: "PotentialEquation"	RelError: 1.07491e+01	AbsError: 1.04412e-02
+    Region: "nitride0"	RelError: 7.08456e-02	AbsError: 9.81405e-02
+      Equation: "PotentialEquation"	RelError: 7.08456e-02	AbsError: 9.81405e-02
+    Region: "nitride1"	RelError: 7.08362e-02	AbsError: 9.81114e-02
+      Equation: "PotentialEquation"	RelError: 7.08362e-02	AbsError: 9.81114e-02
+    Region: "oxide"	RelError: 7.14286e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 7.14286e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 3.67380e+00	AbsError: 6.95757e+17
+    Region: "bulk"	RelError: 3.65856e+00	AbsError: 6.95757e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.78324e-02	AbsError: 6.95170e+17
+      Equation: "HoleContinuityEquation"	RelError: 1.45897e-01	AbsError: 5.87324e+14
+      Equation: "PotentialEquation"	RelError: 3.49483e+00	AbsError: 1.21066e-03
+    Region: "nitride0"	RelError: 8.05360e-04	AbsError: 7.30270e-04
+      Equation: "PotentialEquation"	RelError: 8.05360e-04	AbsError: 7.30270e-04
+    Region: "nitride1"	RelError: 7.48013e-04	AbsError: 6.73474e-04
+      Equation: "PotentialEquation"	RelError: 7.48013e-04	AbsError: 6.73474e-04
+    Region: "oxide"	RelError: 1.36841e-02	AbsError: 8.38266e-03
+      Equation: "PotentialEquation"	RelError: 1.36841e-02	AbsError: 8.38266e-03
+Iteration: 2
+  Device: "mosfet"	RelError: 1.64248e-02	AbsError: 1.92211e+16
+    Region: "bulk"	RelError: 1.45437e-02	AbsError: 1.92211e+16
+      Equation: "ElectronContinuityEquation"	RelError: 3.52900e-04	AbsError: 1.92191e+16
+      Equation: "HoleContinuityEquation"	RelError: 1.94615e-03	AbsError: 2.02531e+12
+      Equation: "PotentialEquation"	RelError: 1.22447e-02	AbsError: 4.68286e-06
+    Region: "nitride0"	RelError: 9.85745e-05	AbsError: 8.93924e-05
+      Equation: "PotentialEquation"	RelError: 9.85745e-05	AbsError: 8.93924e-05
+    Region: "nitride1"	RelError: 9.11206e-05	AbsError: 8.20480e-05
+      Equation: "PotentialEquation"	RelError: 9.11206e-05	AbsError: 8.20480e-05
+    Region: "oxide"	RelError: 1.69138e-03	AbsError: 1.03787e-03
+      Equation: "PotentialEquation"	RelError: 1.69138e-03	AbsError: 1.03787e-03
+Iteration: 3
+  Device: "mosfet"	RelError: 7.72563e-06	AbsError: 6.91088e+13
+    Region: "bulk"	RelError: 8.14909e-07	AbsError: 6.91088e+13
+      Equation: "ElectronContinuityEquation"	RelError: 3.47513e-07	AbsError: 6.91087e+13
+      Equation: "HoleContinuityEquation"	RelError: 3.56817e-07	AbsError: 1.72451e+07
+      Equation: "PotentialEquation"	RelError: 1.10580e-07	AbsError: 9.11633e-09
+    Region: "nitride0"	RelError: 3.46405e-07	AbsError: 3.14566e-07
+      Equation: "PotentialEquation"	RelError: 3.46405e-07	AbsError: 3.14566e-07
+    Region: "nitride1"	RelError: 3.17957e-07	AbsError: 2.86299e-07
+      Equation: "PotentialEquation"	RelError: 3.17957e-07	AbsError: 2.86299e-07
+    Region: "oxide"	RelError: 6.24636e-06	AbsError: 3.83288e-06
+      Equation: "PotentialEquation"	RelError: 6.24636e-06	AbsError: 3.83288e-06
+Succeeded
+gate	0.8
+source	0.0	-1.4260639800057608e-18	-5.332965920562396e-39	-1.4260639800057608e-18
+drain	0.0	-1.3172333783699455e-18	7.004266630191466e-39	-1.3172333783699455e-18
+body	0.0	2.4428523342895897e-33	1.0139255942438323e-22	1.0139255942682609e-22
+gate last end 8.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.65754e+01	AbsError: 1.69952e+19
+    Region: "bulk"	RelError: 1.63764e+01	AbsError: 1.69952e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.40441e-01	AbsError: 1.69921e+19
+      Equation: "HoleContinuityEquation"	RelError: 4.63172e-01	AbsError: 3.10602e+15
+      Equation: "PotentialEquation"	RelError: 1.56728e+01	AbsError: 8.19468e-03
+    Region: "nitride0"	RelError: 6.61568e-02	AbsError: 9.81366e-02
+      Equation: "PotentialEquation"	RelError: 6.61568e-02	AbsError: 9.81366e-02
+    Region: "nitride1"	RelError: 6.61486e-02	AbsError: 9.81076e-02
+      Equation: "PotentialEquation"	RelError: 6.61486e-02	AbsError: 9.81076e-02
+    Region: "oxide"	RelError: 6.66667e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 6.66667e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 3.66337e+00	AbsError: 5.28574e+17
+    Region: "bulk"	RelError: 3.65234e+00	AbsError: 5.28574e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.08676e-02	AbsError: 5.28206e+17
+      Equation: "HoleContinuityEquation"	RelError: 8.98627e-02	AbsError: 3.68304e+14
+      Equation: "PotentialEquation"	RelError: 3.55161e+00	AbsError: 8.10413e-04
+    Region: "nitride0"	RelError: 5.64594e-04	AbsError: 5.33024e-04
+      Equation: "PotentialEquation"	RelError: 5.64594e-04	AbsError: 5.33024e-04
+    Region: "nitride1"	RelError: 5.25639e-04	AbsError: 4.92447e-04
+      Equation: "PotentialEquation"	RelError: 5.25639e-04	AbsError: 4.92447e-04
+    Region: "oxide"	RelError: 9.93505e-03	AbsError: 6.08992e-03
+      Equation: "PotentialEquation"	RelError: 9.93505e-03	AbsError: 6.08992e-03
+Iteration: 2
+  Device: "mosfet"	RelError: 9.43561e-03	AbsError: 1.19899e+16
+    Region: "bulk"	RelError: 8.26788e-03	AbsError: 1.19899e+16
+      Equation: "ElectronContinuityEquation"	RelError: 1.49523e-04	AbsError: 1.19892e+16
+      Equation: "HoleContinuityEquation"	RelError: 8.45590e-04	AbsError: 7.40289e+11
+      Equation: "PotentialEquation"	RelError: 7.27277e-03	AbsError: 1.76829e-06
+    Region: "nitride0"	RelError: 5.95310e-05	AbsError: 5.62056e-05
+      Equation: "PotentialEquation"	RelError: 5.95310e-05	AbsError: 5.62056e-05
+    Region: "nitride1"	RelError: 5.50955e-05	AbsError: 5.16193e-05
+      Equation: "PotentialEquation"	RelError: 5.50955e-05	AbsError: 5.16193e-05
+    Region: "oxide"	RelError: 1.05310e-03	AbsError: 6.46205e-04
+      Equation: "PotentialEquation"	RelError: 1.05310e-03	AbsError: 6.46205e-04
+Iteration: 3
+  Device: "mosfet"	RelError: 2.65350e-06	AbsError: 2.48331e+13
+    Region: "bulk"	RelError: 2.68656e-07	AbsError: 2.48331e+13
+      Equation: "ElectronContinuityEquation"	RelError: 1.24716e-07	AbsError: 2.48331e+13
+      Equation: "HoleContinuityEquation"	RelError: 1.28324e-07	AbsError: 1.47710e+06
+      Equation: "PotentialEquation"	RelError: 1.56155e-08	AbsError: 3.27525e-09
+    Region: "nitride0"	RelError: 1.21992e-07	AbsError: 1.15178e-07
+      Equation: "PotentialEquation"	RelError: 1.21992e-07	AbsError: 1.15178e-07
+    Region: "nitride1"	RelError: 1.12170e-07	AbsError: 1.05093e-07
+      Equation: "PotentialEquation"	RelError: 1.12170e-07	AbsError: 1.05093e-07
+    Region: "oxide"	RelError: 2.15068e-06	AbsError: 1.31970e-06
+      Equation: "PotentialEquation"	RelError: 2.15068e-06	AbsError: 1.31970e-06
+Succeeded
+gate	0.9
+source	0.0	-6.373342087951317e-19	-1.9244310317197557e-39	-6.373342087951317e-19
+drain	0.0	-2.563631344567159e-21	2.137575567634439e-39	-2.563631344567159e-21
+body	0.0	-5.315495117773827e-34	-3.0466662491470853e-23	-3.04666624920024e-23
+gate last end 9.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 2.56796e+01	AbsError: 1.79614e+19
+    Region: "bulk"	RelError: 2.54930e+01	AbsError: 1.79614e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.05417e-01	AbsError: 1.79590e+19
+      Equation: "HoleContinuityEquation"	RelError: 3.48657e-01	AbsError: 2.41945e+15
+      Equation: "PotentialEquation"	RelError: 2.49389e+01	AbsError: 6.69239e-03
+    Region: "nitride0"	RelError: 6.20506e-02	AbsError: 9.81342e-02
+      Equation: "PotentialEquation"	RelError: 6.20506e-02	AbsError: 9.81342e-02
+    Region: "nitride1"	RelError: 6.20435e-02	AbsError: 9.81052e-02
+      Equation: "PotentialEquation"	RelError: 6.20435e-02	AbsError: 9.81052e-02
+    Region: "oxide"	RelError: 6.25000e-02	AbsError: 1.00000e-01
+      Equation: "PotentialEquation"	RelError: 6.25000e-02	AbsError: 1.00000e-01
+Iteration: 1
+  Device: "mosfet"	RelError: 3.36337e+00	AbsError: 4.38434e+17
+    Region: "bulk"	RelError: 3.35494e+00	AbsError: 4.38434e+17
+      Equation: "ElectronContinuityEquation"	RelError: 7.08292e-03	AbsError: 4.38186e+17
+      Equation: "HoleContinuityEquation"	RelError: 6.00349e-02	AbsError: 2.47788e+14
+      Equation: "PotentialEquation"	RelError: 3.28782e+00	AbsError: 5.72458e-04
+    Region: "nitride0"	RelError: 4.17771e-04	AbsError: 4.09997e-04
+      Equation: "PotentialEquation"	RelError: 4.17771e-04	AbsError: 4.09997e-04
+    Region: "nitride1"	RelError: 3.89868e-04	AbsError: 3.79476e-04
+      Equation: "PotentialEquation"	RelError: 3.89868e-04	AbsError: 3.79476e-04
+    Region: "oxide"	RelError: 7.62185e-03	AbsError: 4.67362e-03
+      Equation: "PotentialEquation"	RelError: 7.62185e-03	AbsError: 4.67362e-03
+Iteration: 2
+  Device: "mosfet"	RelError: 5.74524e-03	AbsError: 8.04508e+15
+    Region: "bulk"	RelError: 4.96659e-03	AbsError: 8.04508e+15
+      Equation: "ElectronContinuityEquation"	RelError: 7.22139e-05	AbsError: 8.04476e+15
+      Equation: "HoleContinuityEquation"	RelError: 4.12160e-04	AbsError: 3.25351e+11
+      Equation: "PotentialEquation"	RelError: 4.48221e-03	AbsError: 1.04205e-06
+    Region: "nitride0"	RelError: 3.86048e-05	AbsError: 3.78878e-05
+      Equation: "PotentialEquation"	RelError: 3.86048e-05	AbsError: 3.78878e-05
+    Region: "nitride1"	RelError: 3.57786e-05	AbsError: 3.48261e-05
+      Equation: "PotentialEquation"	RelError: 3.57786e-05	AbsError: 3.48261e-05
+    Region: "oxide"	RelError: 7.04270e-04	AbsError: 4.32153e-04
+      Equation: "PotentialEquation"	RelError: 7.04270e-04	AbsError: 4.32153e-04
+Iteration: 3
+  Device: "mosfet"	RelError: 1.09979e-06	AbsError: 1.07538e+13
+    Region: "bulk"	RelError: 1.11810e-07	AbsError: 1.07538e+13
+      Equation: "ElectronContinuityEquation"	RelError: 5.39396e-08	AbsError: 1.07538e+13
+      Equation: "HoleContinuityEquation"	RelError: 5.55599e-08	AbsError: 1.89260e+05
+      Equation: "PotentialEquation"	RelError: 2.31011e-09	AbsError: 1.41733e-09
+    Region: "nitride0"	RelError: 5.17614e-08	AbsError: 5.08001e-08
+      Equation: "PotentialEquation"	RelError: 5.17614e-08	AbsError: 5.08001e-08
+    Region: "nitride1"	RelError: 4.76855e-08	AbsError: 4.64160e-08
+      Equation: "PotentialEquation"	RelError: 4.76855e-08	AbsError: 4.64160e-08
+    Region: "oxide"	RelError: 8.88536e-07	AbsError: 5.45222e-07
+      Equation: "PotentialEquation"	RelError: 8.88536e-07	AbsError: 5.45222e-07
+Succeeded
+gate	1
+source	0.0	2.1794549090885227e-19	1.910160683333072e-39	2.1794549090885227e-19
+drain	0.0	-3.6456289336937656e-19	-5.733135752937205e-40	-3.6456289336937656e-19
+body	0.0	-1.8519133262833233e-34	1.825414276032635e-23	1.8254142760141158e-23
+gate	1
+source	0.0	2.1794549090885227e-19	1.910160683333072e-39	2.1794549090885227e-19
+drain	0.0	-3.6456289336937656e-19	-5.733135752937205e-40	-3.6456289336937656e-19
+body	0.0	-1.8519133262833233e-34	1.825414276032635e-23	1.8254142760141158e-23
+drain last end 0.000000e+00 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 3.31104e+04	AbsError: 1.44629e+19
+    Region: "bulk"	RelError: 3.31102e+04	AbsError: 1.44629e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.01054e+03	AbsError: 1.43056e+19
+      Equation: "HoleContinuityEquation"	RelError: 2.82015e+04	AbsError: 1.57265e+17
+      Equation: "PotentialEquation"	RelError: 2.89816e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 3.05551e-02	AbsError: 3.39524e-02
+      Equation: "PotentialEquation"	RelError: 3.05551e-02	AbsError: 3.39524e-02
+    Region: "nitride1"	RelError: 2.00679e-02	AbsError: 1.99336e-02
+      Equation: "PotentialEquation"	RelError: 2.00679e-02	AbsError: 1.99336e-02
+    Region: "oxide"	RelError: 1.40104e-01	AbsError: 9.99777e-02
+      Equation: "PotentialEquation"	RelError: 1.40104e-01	AbsError: 9.99777e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 2.06745e+03	AbsError: 1.75309e+18
+    Region: "bulk"	RelError: 2.06736e+03	AbsError: 1.75309e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99073e-01	AbsError: 1.72928e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99895e-01	AbsError: 2.38113e+16
+      Equation: "PotentialEquation"	RelError: 2.06536e+03	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 1.19060e-02	AbsError: 1.21608e-02
+      Equation: "PotentialEquation"	RelError: 1.19060e-02	AbsError: 1.21608e-02
+    Region: "nitride1"	RelError: 1.01810e-02	AbsError: 1.00110e-02
+      Equation: "PotentialEquation"	RelError: 1.01810e-02	AbsError: 1.00110e-02
+    Region: "oxide"	RelError: 6.25681e-02	AbsError: 4.09554e-02
+      Equation: "PotentialEquation"	RelError: 6.25681e-02	AbsError: 4.09554e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 1.33783e+04	AbsError: 1.33273e+18
+    Region: "bulk"	RelError: 1.33783e+04	AbsError: 1.33273e+18
+      Equation: "ElectronContinuityEquation"	RelError: 1.38372e+01	AbsError: 1.32925e+18
+      Equation: "HoleContinuityEquation"	RelError: 1.30368e+04	AbsError: 3.48844e+15
+      Equation: "PotentialEquation"	RelError: 3.27666e+02	AbsError: 2.58989e-02
+    Region: "nitride0"	RelError: 9.92260e-03	AbsError: 1.02366e-02
+      Equation: "PotentialEquation"	RelError: 9.92260e-03	AbsError: 1.02366e-02
+    Region: "nitride1"	RelError: 6.51593e-03	AbsError: 6.36564e-03
+      Equation: "PotentialEquation"	RelError: 6.51593e-03	AbsError: 6.36564e-03
+    Region: "oxide"	RelError: 4.79185e-02	AbsError: 3.19027e-02
+      Equation: "PotentialEquation"	RelError: 4.79185e-02	AbsError: 3.19027e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 4.01327e+01	AbsError: 1.01945e+18
+    Region: "bulk"	RelError: 4.00804e+01	AbsError: 1.01945e+18
+      Equation: "ElectronContinuityEquation"	RelError: 7.19559e-01	AbsError: 1.01927e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99829e-01	AbsError: 1.78324e+14
+      Equation: "PotentialEquation"	RelError: 3.83611e+01	AbsError: 9.18027e-03
+    Region: "nitride0"	RelError: 7.51861e-03	AbsError: 7.83127e-03
+      Equation: "PotentialEquation"	RelError: 7.51861e-03	AbsError: 7.83127e-03
+    Region: "nitride1"	RelError: 3.05116e-03	AbsError: 2.97172e-03
+      Equation: "PotentialEquation"	RelError: 3.05116e-03	AbsError: 2.97172e-03
+    Region: "oxide"	RelError: 4.16536e-02	AbsError: 2.55629e-02
+      Equation: "PotentialEquation"	RelError: 4.16536e-02	AbsError: 2.55629e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 1.96208e+00	AbsError: 5.00191e+17
+    Region: "bulk"	RelError: 1.94236e+00	AbsError: 5.00191e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.42122e-02	AbsError: 4.99996e+17
+      Equation: "HoleContinuityEquation"	RelError: 3.81737e-01	AbsError: 1.94605e+14
+      Equation: "PotentialEquation"	RelError: 1.54641e+00	AbsError: 1.63818e-04
+    Region: "nitride0"	RelError: 4.32444e-03	AbsError: 4.51460e-03
+      Equation: "PotentialEquation"	RelError: 4.32444e-03	AbsError: 4.51460e-03
+    Region: "nitride1"	RelError: 4.69208e-04	AbsError: 4.59198e-04
+      Equation: "PotentialEquation"	RelError: 4.69208e-04	AbsError: 4.59198e-04
+    Region: "oxide"	RelError: 1.49271e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49271e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 1.62893e-03	AbsError: 1.93773e+15
+    Region: "bulk"	RelError: 1.43236e-03	AbsError: 1.93773e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.20506e-05	AbsError: 1.93766e+15
+      Equation: "HoleContinuityEquation"	RelError: 1.02346e-03	AbsError: 6.71998e+10
+      Equation: "PotentialEquation"	RelError: 3.86843e-04	AbsError: 1.70439e-07
+    Region: "nitride0"	RelError: 1.12532e-05	AbsError: 1.17482e-05
+      Equation: "PotentialEquation"	RelError: 1.12532e-05	AbsError: 1.17482e-05
+    Region: "nitride1"	RelError: 1.14198e-05	AbsError: 1.11174e-05
+      Equation: "PotentialEquation"	RelError: 1.14198e-05	AbsError: 1.11174e-05
+    Region: "oxide"	RelError: 1.73897e-04	AbsError: 1.20573e-04
+      Equation: "PotentialEquation"	RelError: 1.73897e-04	AbsError: 1.20573e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 7.92958e-08	AbsError: 3.96238e+11
+    Region: "bulk"	RelError: 4.83423e-09	AbsError: 3.96238e+11
+      Equation: "ElectronContinuityEquation"	RelError: 1.98994e-09	AbsError: 3.96238e+11
+      Equation: "HoleContinuityEquation"	RelError: 1.98816e-09	AbsError: 9.39669e+04
+      Equation: "PotentialEquation"	RelError: 8.56128e-10	AbsError: 5.20649e-11
+    Region: "nitride0"	RelError: 2.15177e-09	AbsError: 2.25218e-09
+      Equation: "PotentialEquation"	RelError: 2.15177e-09	AbsError: 2.25218e-09
+    Region: "nitride1"	RelError: 2.16835e-09	AbsError: 2.11174e-09
+      Equation: "PotentialEquation"	RelError: 2.16835e-09	AbsError: 2.11174e-09
+    Region: "oxide"	RelError: 7.01415e-08	AbsError: 5.00542e-08
+      Equation: "PotentialEquation"	RelError: 7.01415e-08	AbsError: 5.00542e-08
+Succeeded
+gate	1
+source	0.0	-9.205205103211707e-06	-1.1373286718979852e-32	-9.205205103211707e-06
+drain	0.1	9.20520510321187e-06	1.738573473928314e-24	9.20520510321187e-06
+body	0.0	-5.98919586715845e-21	-2.0314446901293764e-21	-8.020640557287826e-21
+drain last end 1.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.29039e+05	AbsError: 1.42576e+19
+    Region: "bulk"	RelError: 1.29039e+05	AbsError: 1.42576e+19
+      Equation: "ElectronContinuityEquation"	RelError: 3.48597e+04	AbsError: 1.41118e+19
+      Equation: "HoleContinuityEquation"	RelError: 9.07739e+04	AbsError: 1.45805e+17
+      Equation: "PotentialEquation"	RelError: 3.40496e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.92640e-02	AbsError: 3.40868e-02
+      Equation: "PotentialEquation"	RelError: 2.92640e-02	AbsError: 3.40868e-02
+    Region: "nitride1"	RelError: 2.02896e-02	AbsError: 2.01614e-02
+      Equation: "PotentialEquation"	RelError: 2.02896e-02	AbsError: 2.01614e-02
+    Region: "oxide"	RelError: 1.40108e-01	AbsError: 9.99812e-02
+      Equation: "PotentialEquation"	RelError: 1.40108e-01	AbsError: 9.99812e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 2.55286e+03	AbsError: 1.72822e+18
+    Region: "bulk"	RelError: 2.55278e+03	AbsError: 1.72822e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99934e-01	AbsError: 1.70675e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99971e-01	AbsError: 2.14657e+16
+      Equation: "PotentialEquation"	RelError: 2.55078e+03	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 1.11009e-02	AbsError: 1.20332e-02
+      Equation: "PotentialEquation"	RelError: 1.11009e-02	AbsError: 1.20332e-02
+    Region: "nitride1"	RelError: 1.04453e-02	AbsError: 1.02720e-02
+      Equation: "PotentialEquation"	RelError: 1.04453e-02	AbsError: 1.02720e-02
+    Region: "oxide"	RelError: 6.08764e-02	AbsError: 4.09552e-02
+      Equation: "PotentialEquation"	RelError: 6.08764e-02	AbsError: 4.09552e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 1.13305e+04	AbsError: 1.34419e+18
+    Region: "bulk"	RelError: 1.13305e+04	AbsError: 1.34419e+18
+      Equation: "ElectronContinuityEquation"	RelError: 7.79206e+00	AbsError: 1.34154e+18
+      Equation: "HoleContinuityEquation"	RelError: 1.12676e+04	AbsError: 2.64546e+15
+      Equation: "PotentialEquation"	RelError: 5.50729e+01	AbsError: 2.58990e-02
+    Region: "nitride0"	RelError: 9.39100e-03	AbsError: 1.02762e-02
+      Equation: "PotentialEquation"	RelError: 9.39100e-03	AbsError: 1.02762e-02
+    Region: "nitride1"	RelError: 6.44047e-03	AbsError: 6.29309e-03
+      Equation: "PotentialEquation"	RelError: 6.44047e-03	AbsError: 6.29309e-03
+    Region: "oxide"	RelError: 4.79197e-02	AbsError: 3.20711e-02
+      Equation: "PotentialEquation"	RelError: 4.79197e-02	AbsError: 3.20711e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 2.41596e+00	AbsError: 1.01776e+18
+    Region: "bulk"	RelError: 2.36379e+00	AbsError: 1.01776e+18
+      Equation: "ElectronContinuityEquation"	RelError: 7.15006e-01	AbsError: 1.01759e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99698e-01	AbsError: 1.68309e+14
+      Equation: "PotentialEquation"	RelError: 6.49088e-01	AbsError: 9.20030e-03
+    Region: "nitride0"	RelError: 7.06690e-03	AbsError: 7.80298e-03
+      Equation: "PotentialEquation"	RelError: 7.06690e-03	AbsError: 7.80298e-03
+    Region: "nitride1"	RelError: 3.10963e-03	AbsError: 3.02905e-03
+      Equation: "PotentialEquation"	RelError: 3.10963e-03	AbsError: 3.02905e-03
+    Region: "oxide"	RelError: 4.19940e-02	AbsError: 2.57706e-02
+      Equation: "PotentialEquation"	RelError: 4.19940e-02	AbsError: 2.57706e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 1.03315e+00	AbsError: 4.99779e+17
+    Region: "bulk"	RelError: 1.01367e+00	AbsError: 4.99779e+17
+      Equation: "ElectronContinuityEquation"	RelError: 1.57363e-02	AbsError: 4.99598e+17
+      Equation: "HoleContinuityEquation"	RelError: 3.40305e-01	AbsError: 1.80786e+14
+      Equation: "PotentialEquation"	RelError: 6.57631e-01	AbsError: 1.72847e-04
+    Region: "nitride0"	RelError: 4.07663e-03	AbsError: 4.51102e-03
+      Equation: "PotentialEquation"	RelError: 4.07663e-03	AbsError: 4.51102e-03
+    Region: "nitride1"	RelError: 4.75820e-04	AbsError: 4.65472e-04
+      Equation: "PotentialEquation"	RelError: 4.75820e-04	AbsError: 4.65472e-04
+    Region: "oxide"	RelError: 1.49287e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49287e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 1.16056e-03	AbsError: 1.93359e+15
+    Region: "bulk"	RelError: 9.59679e-04	AbsError: 1.93359e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.28466e-05	AbsError: 1.93350e+15
+      Equation: "HoleContinuityEquation"	RelError: 6.75420e-04	AbsError: 8.71498e+10
+      Equation: "PotentialEquation"	RelError: 2.61412e-04	AbsError: 1.70388e-07
+    Region: "nitride0"	RelError: 1.11668e-05	AbsError: 1.23568e-05
+      Equation: "PotentialEquation"	RelError: 1.11668e-05	AbsError: 1.23568e-05
+    Region: "nitride1"	RelError: 1.21264e-05	AbsError: 1.18067e-05
+      Equation: "PotentialEquation"	RelError: 1.21264e-05	AbsError: 1.18067e-05
+    Region: "oxide"	RelError: 1.77590e-04	AbsError: 1.18178e-04
+      Equation: "PotentialEquation"	RelError: 1.77590e-04	AbsError: 1.18178e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 9.67767e-08	AbsError: 4.58993e+11
+    Region: "bulk"	RelError: 7.69688e-09	AbsError: 4.58993e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.30797e-09	AbsError: 4.58993e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.37041e-09	AbsError: 2.07282e+05
+      Equation: "PotentialEquation"	RelError: 3.01850e-09	AbsError: 6.03801e-11
+    Region: "nitride0"	RelError: 2.90336e-09	AbsError: 3.21966e-09
+      Equation: "PotentialEquation"	RelError: 2.90336e-09	AbsError: 3.21966e-09
+    Region: "nitride1"	RelError: 2.95540e-09	AbsError: 2.87749e-09
+      Equation: "PotentialEquation"	RelError: 2.95540e-09	AbsError: 2.87749e-09
+    Region: "oxide"	RelError: 8.32211e-08	AbsError: 6.77102e-08
+      Equation: "PotentialEquation"	RelError: 8.32211e-08	AbsError: 6.77102e-08
+Succeeded
+gate	1
+source	0.0	-1.684493520568228e-05	-2.093902621462103e-32	-1.684493520568228e-05
+drain	0.2	1.6844935205682172e-05	1.79911686507488e-24	1.6844935205682172e-05
+body	0.0	-6.749108933110365e-21	-3.400367221654858e-21	-1.0149476154765223e-20
+drain last end 2.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 2.49380e+04	AbsError: 1.39996e+19
+    Region: "bulk"	RelError: 2.49379e+04	AbsError: 1.39996e+19
+      Equation: "ElectronContinuityEquation"	RelError: 3.68434e+03	AbsError: 1.38635e+19
+      Equation: "HoleContinuityEquation"	RelError: 1.94593e+04	AbsError: 1.36112e+17
+      Equation: "PotentialEquation"	RelError: 1.79418e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.80330e-02	AbsError: 3.41631e-02
+      Equation: "PotentialEquation"	RelError: 2.80330e-02	AbsError: 3.41631e-02
+    Region: "nitride1"	RelError: 2.04177e-02	AbsError: 2.02937e-02
+      Equation: "PotentialEquation"	RelError: 2.04177e-02	AbsError: 2.02937e-02
+    Region: "oxide"	RelError: 1.40112e-01	AbsError: 9.99847e-02
+      Equation: "PotentialEquation"	RelError: 1.40112e-01	AbsError: 9.99847e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 1.40354e+03	AbsError: 1.69769e+18
+    Region: "bulk"	RelError: 1.40346e+03	AbsError: 1.69769e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.67862e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99852e-01	AbsError: 1.90681e+16
+      Equation: "PotentialEquation"	RelError: 4.03461e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 1.03864e-02	AbsError: 1.19077e-02
+      Equation: "PotentialEquation"	RelError: 1.03864e-02	AbsError: 1.19077e-02
+    Region: "nitride1"	RelError: 1.06941e-02	AbsError: 1.05167e-02
+      Equation: "PotentialEquation"	RelError: 1.06941e-02	AbsError: 1.05167e-02
+    Region: "oxide"	RelError: 6.08774e-02	AbsError: 4.09549e-02
+      Equation: "PotentialEquation"	RelError: 6.08774e-02	AbsError: 4.09549e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 3.78156e+04	AbsError: 1.36377e+18
+    Region: "bulk"	RelError: 3.78155e+04	AbsError: 1.36377e+18
+      Equation: "ElectronContinuityEquation"	RelError: 5.97819e+00	AbsError: 1.36178e+18
+      Equation: "HoleContinuityEquation"	RelError: 3.77585e+04	AbsError: 1.99552e+15
+      Equation: "PotentialEquation"	RelError: 5.09964e+01	AbsError: 2.58988e-02
+    Region: "nitride0"	RelError: 9.02362e-03	AbsError: 1.04395e-02
+      Equation: "PotentialEquation"	RelError: 9.02362e-03	AbsError: 1.04395e-02
+    Region: "nitride1"	RelError: 6.40069e-03	AbsError: 6.25449e-03
+      Equation: "PotentialEquation"	RelError: 6.40069e-03	AbsError: 6.25449e-03
+    Region: "oxide"	RelError: 4.79209e-02	AbsError: 3.21881e-02
+      Equation: "PotentialEquation"	RelError: 4.79209e-02	AbsError: 3.21881e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 3.30118e+00	AbsError: 1.01660e+18
+    Region: "bulk"	RelError: 3.24955e+00	AbsError: 1.01660e+18
+      Equation: "ElectronContinuityEquation"	RelError: 6.95982e-01	AbsError: 1.01644e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99932e-01	AbsError: 1.56880e+14
+      Equation: "PotentialEquation"	RelError: 1.55364e+00	AbsError: 9.21969e-03
+    Region: "nitride0"	RelError: 6.64836e-03	AbsError: 7.75577e-03
+      Equation: "PotentialEquation"	RelError: 6.64836e-03	AbsError: 7.75577e-03
+    Region: "nitride1"	RelError: 2.98782e-03	AbsError: 2.91088e-03
+      Equation: "PotentialEquation"	RelError: 2.98782e-03	AbsError: 2.91088e-03
+    Region: "oxide"	RelError: 4.19947e-02	AbsError: 2.57709e-02
+      Equation: "PotentialEquation"	RelError: 4.19947e-02	AbsError: 2.57709e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 8.22834e-01	AbsError: 4.99673e+17
+    Region: "bulk"	RelError: 8.03504e-01	AbsError: 4.99673e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.07227e-02	AbsError: 4.99509e+17
+      Equation: "HoleContinuityEquation"	RelError: 1.52734e-01	AbsError: 1.64008e+14
+      Equation: "PotentialEquation"	RelError: 6.30048e-01	AbsError: 1.78517e-04
+    Region: "nitride0"	RelError: 3.85664e-03	AbsError: 4.50904e-03
+      Equation: "PotentialEquation"	RelError: 3.85664e-03	AbsError: 4.50904e-03
+    Region: "nitride1"	RelError: 5.43338e-04	AbsError: 5.30174e-04
+      Equation: "PotentialEquation"	RelError: 5.43338e-04	AbsError: 5.30174e-04
+    Region: "oxide"	RelError: 1.49303e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49303e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 7.51431e-04	AbsError: 1.81063e+15
+    Region: "bulk"	RelError: 5.49972e-04	AbsError: 1.81063e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.38969e-05	AbsError: 1.81054e+15
+      Equation: "HoleContinuityEquation"	RelError: 1.67116e-04	AbsError: 9.34500e+10
+      Equation: "PotentialEquation"	RelError: 3.58960e-04	AbsError: 1.75747e-07
+    Region: "nitride0"	RelError: 1.04053e-05	AbsError: 1.21656e-05
+      Equation: "PotentialEquation"	RelError: 1.04053e-05	AbsError: 1.21656e-05
+    Region: "nitride1"	RelError: 1.15086e-05	AbsError: 1.12062e-05
+      Equation: "PotentialEquation"	RelError: 1.15086e-05	AbsError: 1.12062e-05
+    Region: "oxide"	RelError: 1.79545e-04	AbsError: 1.14596e-04
+      Equation: "PotentialEquation"	RelError: 1.79545e-04	AbsError: 1.14596e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 9.69585e-08	AbsError: 5.17504e+11
+    Region: "bulk"	RelError: 7.28344e-09	AbsError: 5.17504e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.60543e-09	AbsError: 5.17504e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.66973e-09	AbsError: 3.17746e+05
+      Equation: "PotentialEquation"	RelError: 2.00828e-09	AbsError: 6.80716e-11
+    Region: "nitride0"	RelError: 3.45926e-09	AbsError: 4.05165e-09
+      Equation: "PotentialEquation"	RelError: 3.45926e-09	AbsError: 4.05165e-09
+    Region: "nitride1"	RelError: 3.62712e-09	AbsError: 3.53184e-09
+      Equation: "PotentialEquation"	RelError: 3.62712e-09	AbsError: 3.53184e-09
+    Region: "oxide"	RelError: 8.25887e-08	AbsError: 7.54545e-08
+      Equation: "PotentialEquation"	RelError: 8.25887e-08	AbsError: 7.54545e-08
+Succeeded
+gate	1
+source	0.0	-2.2982766094689044e-05	-2.87244052629675e-32	-2.2982766094689044e-05
+drain	0.30000000000000004	2.2982766094690084e-05	1.8194662377199023e-24	2.2982766094690084e-05
+body	0.0	-7.341969932801872e-21	-4.538414023804258e-21	-1.188038395660613e-20
+drain last end 3.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 5.39889e+04	AbsError: 1.36761e+19
+    Region: "bulk"	RelError: 5.39887e+04	AbsError: 1.36761e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.05978e+04	AbsError: 1.35493e+19
+      Equation: "HoleContinuityEquation"	RelError: 3.12381e+04	AbsError: 1.26803e+17
+      Equation: "PotentialEquation"	RelError: 2.15278e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.68468e-02	AbsError: 3.41713e-02
+      Equation: "PotentialEquation"	RelError: 2.68468e-02	AbsError: 3.41713e-02
+    Region: "nitride1"	RelError: 2.04254e-02	AbsError: 2.03035e-02
+      Equation: "PotentialEquation"	RelError: 2.04254e-02	AbsError: 2.03035e-02
+    Region: "oxide"	RelError: 1.40116e-01	AbsError: 9.99879e-02
+      Equation: "PotentialEquation"	RelError: 1.40116e-01	AbsError: 9.99879e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 4.92565e+03	AbsError: 1.66305e+18
+    Region: "bulk"	RelError: 4.92556e+03	AbsError: 1.66305e+18
+      Equation: "ElectronContinuityEquation"	RelError: 3.27972e+03	AbsError: 1.64598e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.70732e+16
+      Equation: "PotentialEquation"	RelError: 6.46844e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 9.75860e-03	AbsError: 1.17969e-02
+      Equation: "PotentialEquation"	RelError: 9.75860e-03	AbsError: 1.17969e-02
+    Region: "nitride1"	RelError: 1.09253e-02	AbsError: 1.07428e-02
+      Equation: "PotentialEquation"	RelError: 1.09253e-02	AbsError: 1.07428e-02
+    Region: "oxide"	RelError: 6.08784e-02	AbsError: 4.09545e-02
+      Equation: "PotentialEquation"	RelError: 6.08784e-02	AbsError: 4.09545e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 9.69341e+04	AbsError: 1.39070e+18
+    Region: "bulk"	RelError: 9.69340e+04	AbsError: 1.39070e+18
+      Equation: "ElectronContinuityEquation"	RelError: 4.90587e+00	AbsError: 1.38933e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.67911e+04	AbsError: 1.36529e+15
+      Equation: "PotentialEquation"	RelError: 1.37949e+02	AbsError: 2.58983e-02
+    Region: "nitride0"	RelError: 8.77798e-03	AbsError: 1.07054e-02
+      Equation: "PotentialEquation"	RelError: 8.77798e-03	AbsError: 1.07054e-02
+    Region: "nitride1"	RelError: 6.23482e-03	AbsError: 6.09266e-03
+      Equation: "PotentialEquation"	RelError: 6.23482e-03	AbsError: 6.09266e-03
+    Region: "oxide"	RelError: 4.79219e-02	AbsError: 3.31096e-02
+      Equation: "PotentialEquation"	RelError: 4.79219e-02	AbsError: 3.31096e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 7.06126e+00	AbsError: 1.01517e+18
+    Region: "bulk"	RelError: 7.01031e+00	AbsError: 1.01517e+18
+      Equation: "ElectronContinuityEquation"	RelError: 6.45477e-01	AbsError: 1.01503e+18
+      Equation: "HoleContinuityEquation"	RelError: 1.00000e+00	AbsError: 1.42557e+14
+      Equation: "PotentialEquation"	RelError: 5.36484e+00	AbsError: 9.23710e-03
+    Region: "nitride0"	RelError: 6.28590e-03	AbsError: 7.72580e-03
+      Equation: "PotentialEquation"	RelError: 6.28590e-03	AbsError: 7.72580e-03
+    Region: "nitride1"	RelError: 2.90144e-03	AbsError: 2.83058e-03
+      Equation: "PotentialEquation"	RelError: 2.90144e-03	AbsError: 2.83058e-03
+    Region: "oxide"	RelError: 4.17566e-02	AbsError: 2.56265e-02
+      Equation: "PotentialEquation"	RelError: 4.17566e-02	AbsError: 2.56265e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 1.26040e+00	AbsError: 4.99979e+17
+    Region: "bulk"	RelError: 1.24121e+00	AbsError: 4.99979e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.37554e-02	AbsError: 4.99831e+17
+      Equation: "HoleContinuityEquation"	RelError: 1.27798e-02	AbsError: 1.47471e+14
+      Equation: "PotentialEquation"	RelError: 1.20467e+00	AbsError: 1.82405e-04
+    Region: "nitride0"	RelError: 3.66016e-03	AbsError: 4.50856e-03
+      Equation: "PotentialEquation"	RelError: 3.66016e-03	AbsError: 4.50856e-03
+    Region: "nitride1"	RelError: 5.93889e-04	AbsError: 5.78325e-04
+      Equation: "PotentialEquation"	RelError: 5.93889e-04	AbsError: 5.78325e-04
+    Region: "oxide"	RelError: 1.49316e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49316e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 9.10961e-04	AbsError: 1.69150e+15
+    Region: "bulk"	RelError: 7.11619e-04	AbsError: 1.69150e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.35996e-05	AbsError: 1.69141e+15
+      Equation: "HoleContinuityEquation"	RelError: 1.45482e-05	AbsError: 9.19997e+10
+      Equation: "PotentialEquation"	RelError: 6.73472e-04	AbsError: 2.07759e-07
+    Region: "nitride0"	RelError: 9.66794e-06	AbsError: 1.19090e-05
+      Equation: "PotentialEquation"	RelError: 9.66794e-06	AbsError: 1.19090e-05
+    Region: "nitride1"	RelError: 1.09012e-05	AbsError: 1.06156e-05
+      Equation: "PotentialEquation"	RelError: 1.09012e-05	AbsError: 1.06156e-05
+    Region: "oxide"	RelError: 1.78773e-04	AbsError: 1.14004e-04
+      Equation: "PotentialEquation"	RelError: 1.78773e-04	AbsError: 1.14004e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.18185e-07	AbsError: 5.58959e+11
+    Region: "bulk"	RelError: 2.27222e-08	AbsError: 5.58959e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.81767e-09	AbsError: 5.58959e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.88172e-09	AbsError: 4.01784e+05
+      Equation: "PotentialEquation"	RelError: 1.70228e-08	AbsError: 7.35604e-11
+    Region: "nitride0"	RelError: 3.77330e-09	AbsError: 4.65465e-09
+      Equation: "PotentialEquation"	RelError: 3.77330e-09	AbsError: 4.65465e-09
+    Region: "nitride1"	RelError: 4.13189e-09	AbsError: 4.02365e-09
+      Equation: "PotentialEquation"	RelError: 4.13189e-09	AbsError: 4.02365e-09
+    Region: "oxide"	RelError: 8.75572e-08	AbsError: 7.88743e-08
+      Equation: "PotentialEquation"	RelError: 8.75572e-08	AbsError: 7.88743e-08
+Succeeded
+gate	1
+source	0.0	-2.7772772954041302e-05	-3.4876815106330164e-32	-2.7772772954041302e-05
+drain	0.4	2.7772772954029735e-05	1.8349435606494685e-24	2.7772772954029735e-05
+body	0.0	-7.903557485739867e-21	-5.801919088091991e-21	-1.3705476573831858e-20
+drain last end 4.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.88125e+05	AbsError: 1.33799e+19
+    Region: "bulk"	RelError: 1.88125e+05	AbsError: 1.33799e+19
+      Equation: "ElectronContinuityEquation"	RelError: 1.44192e+04	AbsError: 1.32621e+19
+      Equation: "HoleContinuityEquation"	RelError: 1.73023e+05	AbsError: 1.17844e+17
+      Equation: "PotentialEquation"	RelError: 6.82747e+02	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.57175e-02	AbsError: 3.41557e-02
+      Equation: "PotentialEquation"	RelError: 2.57175e-02	AbsError: 3.41557e-02
+    Region: "nitride1"	RelError: 2.03278e-02	AbsError: 2.02060e-02
+      Equation: "PotentialEquation"	RelError: 2.03278e-02	AbsError: 2.02060e-02
+    Region: "oxide"	RelError: 1.40120e-01	AbsError: 9.99906e-02
+      Equation: "PotentialEquation"	RelError: 1.40120e-01	AbsError: 9.99906e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 7.15478e+05	AbsError: 1.62706e+18
+    Region: "bulk"	RelError: 7.15478e+05	AbsError: 1.62706e+18
+      Equation: "ElectronContinuityEquation"	RelError: 7.12034e+05	AbsError: 1.61159e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.54646e+16
+      Equation: "PotentialEquation"	RelError: 2.44511e+03	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 9.30281e-03	AbsError: 1.18269e-02
+      Equation: "PotentialEquation"	RelError: 9.30281e-03	AbsError: 1.18269e-02
+    Region: "nitride1"	RelError: 1.10265e-02	AbsError: 1.08409e-02
+      Equation: "PotentialEquation"	RelError: 1.10265e-02	AbsError: 1.08409e-02
+    Region: "oxide"	RelError: 6.08795e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08795e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 2.79998e+05	AbsError: 1.41755e+18
+    Region: "bulk"	RelError: 2.79998e+05	AbsError: 1.41755e+18
+      Equation: "ElectronContinuityEquation"	RelError: 4.55685e+00	AbsError: 1.41662e+18
+      Equation: "HoleContinuityEquation"	RelError: 2.79824e+05	AbsError: 9.34500e+14
+      Equation: "PotentialEquation"	RelError: 1.69780e+02	AbsError: 2.58996e-02
+    Region: "nitride0"	RelError: 8.47922e-03	AbsError: 1.08720e-02
+      Equation: "PotentialEquation"	RelError: 8.47922e-03	AbsError: 1.08720e-02
+    Region: "nitride1"	RelError: 6.02126e-03	AbsError: 5.88448e-03
+      Equation: "PotentialEquation"	RelError: 6.02126e-03	AbsError: 5.88448e-03
+    Region: "oxide"	RelError: 4.79227e-02	AbsError: 3.29629e-02
+      Equation: "PotentialEquation"	RelError: 4.79227e-02	AbsError: 3.29629e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 2.65373e+00	AbsError: 1.01354e+18
+    Region: "bulk"	RelError: 2.60315e+00	AbsError: 1.01354e+18
+      Equation: "ElectronContinuityEquation"	RelError: 6.29769e-01	AbsError: 1.01342e+18
+      Equation: "HoleContinuityEquation"	RelError: 1.00000e+00	AbsError: 1.23942e+14
+      Equation: "PotentialEquation"	RelError: 9.73380e-01	AbsError: 9.25094e-03
+    Region: "nitride0"	RelError: 6.00320e-03	AbsError: 7.75261e-03
+      Equation: "PotentialEquation"	RelError: 6.00320e-03	AbsError: 7.75261e-03
+    Region: "nitride1"	RelError: 2.90483e-03	AbsError: 2.83339e-03
+      Equation: "PotentialEquation"	RelError: 2.90483e-03	AbsError: 2.83339e-03
+    Region: "oxide"	RelError: 4.16766e-02	AbsError: 2.55775e-02
+      Equation: "PotentialEquation"	RelError: 4.16766e-02	AbsError: 2.55775e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 6.85356e+00	AbsError: 5.00713e+17
+    Region: "bulk"	RelError: 6.83452e+00	AbsError: 5.00713e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.58660e-02	AbsError: 5.00583e+17
+      Equation: "HoleContinuityEquation"	RelError: 4.66745e-03	AbsError: 1.30411e+14
+      Equation: "PotentialEquation"	RelError: 6.80399e+00	AbsError: 1.84591e-04
+    Region: "nitride0"	RelError: 3.48479e-03	AbsError: 4.51086e-03
+      Equation: "PotentialEquation"	RelError: 3.48479e-03	AbsError: 4.51086e-03
+    Region: "nitride1"	RelError: 6.19203e-04	AbsError: 6.03011e-04
+      Equation: "PotentialEquation"	RelError: 6.19203e-04	AbsError: 6.03011e-04
+    Region: "oxide"	RelError: 1.49327e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49327e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 3.23867e-03	AbsError: 1.51209e+15
+    Region: "bulk"	RelError: 3.04463e-03	AbsError: 1.51209e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.36137e-05	AbsError: 1.51200e+15
+      Equation: "HoleContinuityEquation"	RelError: 4.41523e-05	AbsError: 8.77158e+10
+      Equation: "PotentialEquation"	RelError: 2.97687e-03	AbsError: 2.34832e-07
+    Region: "nitride0"	RelError: 8.70823e-06	AbsError: 1.12776e-05
+      Equation: "PotentialEquation"	RelError: 8.70823e-06	AbsError: 1.12776e-05
+    Region: "nitride1"	RelError: 1.00859e-05	AbsError: 9.82222e-06
+      Equation: "PotentialEquation"	RelError: 1.00859e-05	AbsError: 9.82222e-06
+    Region: "oxide"	RelError: 1.75244e-04	AbsError: 1.12002e-04
+      Equation: "PotentialEquation"	RelError: 1.75244e-04	AbsError: 1.12002e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.39942e-07	AbsError: 5.75850e+11
+    Region: "bulk"	RelError: 3.76430e-08	AbsError: 5.75850e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.90646e-09	AbsError: 5.75850e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.96631e-09	AbsError: 4.74862e+05
+      Equation: "PotentialEquation"	RelError: 3.17702e-08	AbsError: 7.58055e-11
+    Region: "nitride0"	RelError: 3.91112e-09	AbsError: 5.06850e-09
+      Equation: "PotentialEquation"	RelError: 3.91112e-09	AbsError: 5.06850e-09
+    Region: "nitride1"	RelError: 4.35595e-09	AbsError: 4.24209e-09
+      Equation: "PotentialEquation"	RelError: 4.35595e-09	AbsError: 4.24209e-09
+    Region: "oxide"	RelError: 9.40316e-08	AbsError: 7.87948e-08
+      Equation: "PotentialEquation"	RelError: 9.40316e-08	AbsError: 7.87948e-08
+Succeeded
+gate	1
+source	0.0	-3.1482380549091657e-05	-3.9699617763712105e-32	-3.1482380549091657e-05
+drain	0.5	3.148238054909143e-05	1.8470515710818833e-24	3.148238054909143e-05
+body	0.0	-8.448641323856476e-21	-6.904430846621384e-21	-1.535307217047786e-20
+drain last end 5.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 9.62837e+04	AbsError: 1.31344e+19
+    Region: "bulk"	RelError: 9.62835e+04	AbsError: 1.31344e+19
+      Equation: "ElectronContinuityEquation"	RelError: 5.11633e+04	AbsError: 1.30257e+19
+      Equation: "HoleContinuityEquation"	RelError: 4.24728e+04	AbsError: 1.08686e+17
+      Equation: "PotentialEquation"	RelError: 2.64737e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.47057e-02	AbsError: 3.41262e-02
+      Equation: "PotentialEquation"	RelError: 2.47057e-02	AbsError: 3.41262e-02
+    Region: "nitride1"	RelError: 2.02018e-02	AbsError: 2.00794e-02
+      Equation: "PotentialEquation"	RelError: 2.02018e-02	AbsError: 2.00794e-02
+    Region: "oxide"	RelError: 1.40122e-01	AbsError: 9.99926e-02
+      Equation: "PotentialEquation"	RelError: 1.40122e-01	AbsError: 9.99926e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 3.24290e+03	AbsError: 1.58606e+18
+    Region: "bulk"	RelError: 3.24281e+03	AbsError: 1.58606e+18
+      Equation: "ElectronContinuityEquation"	RelError: 1.33258e+03	AbsError: 1.57226e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.98998e+02	AbsError: 1.37994e+16
+      Equation: "PotentialEquation"	RelError: 9.11236e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 8.94651e-03	AbsError: 1.19334e-02
+      Equation: "PotentialEquation"	RelError: 8.94651e-03	AbsError: 1.19334e-02
+    Region: "nitride1"	RelError: 1.10095e-02	AbsError: 1.08236e-02
+      Equation: "PotentialEquation"	RelError: 1.10095e-02	AbsError: 1.08236e-02
+    Region: "oxide"	RelError: 6.08806e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08806e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 2.58700e+04	AbsError: 1.43649e+18
+    Region: "bulk"	RelError: 2.58700e+04	AbsError: 1.43649e+18
+      Equation: "ElectronContinuityEquation"	RelError: 4.06928e+00	AbsError: 1.43570e+18
+      Equation: "HoleContinuityEquation"	RelError: 2.58444e+04	AbsError: 7.90205e+14
+      Equation: "PotentialEquation"	RelError: 2.15173e+01	AbsError: 2.58981e-02
+    Region: "nitride0"	RelError: 8.15833e-03	AbsError: 1.09716e-02
+      Equation: "PotentialEquation"	RelError: 8.15833e-03	AbsError: 1.09716e-02
+    Region: "nitride1"	RelError: 5.91573e-03	AbsError: 5.78165e-03
+      Equation: "PotentialEquation"	RelError: 5.91573e-03	AbsError: 5.78165e-03
+    Region: "oxide"	RelError: 4.79232e-02	AbsError: 3.26783e-02
+      Equation: "PotentialEquation"	RelError: 4.79232e-02	AbsError: 3.26783e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 2.61868e+00	AbsError: 1.01289e+18
+    Region: "bulk"	RelError: 2.56851e+00	AbsError: 1.01289e+18
+      Equation: "ElectronContinuityEquation"	RelError: 6.08611e-01	AbsError: 1.01278e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99885e-01	AbsError: 1.10461e+14
+      Equation: "PotentialEquation"	RelError: 9.60014e-01	AbsError: 9.26044e-03
+    Region: "nitride0"	RelError: 5.74104e-03	AbsError: 7.77205e-03
+      Equation: "PotentialEquation"	RelError: 5.74104e-03	AbsError: 7.77205e-03
+    Region: "nitride1"	RelError: 2.90717e-03	AbsError: 2.83589e-03
+      Equation: "PotentialEquation"	RelError: 2.90717e-03	AbsError: 2.83589e-03
+    Region: "oxide"	RelError: 4.15184e-02	AbsError: 2.54806e-02
+      Equation: "PotentialEquation"	RelError: 4.15184e-02	AbsError: 2.54806e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 4.35585e+01	AbsError: 5.01056e+17
+    Region: "bulk"	RelError: 4.35396e+01	AbsError: 5.01056e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.77410e-02	AbsError: 5.00939e+17
+      Equation: "HoleContinuityEquation"	RelError: 1.29431e-02	AbsError: 1.17434e+14
+      Equation: "PotentialEquation"	RelError: 4.34989e+01	AbsError: 1.84032e-04
+    Region: "nitride0"	RelError: 3.32474e-03	AbsError: 4.51201e-03
+      Equation: "PotentialEquation"	RelError: 3.32474e-03	AbsError: 4.51201e-03
+    Region: "nitride1"	RelError: 6.21762e-04	AbsError: 6.05531e-04
+      Equation: "PotentialEquation"	RelError: 6.21762e-04	AbsError: 6.05531e-04
+    Region: "oxide"	RelError: 1.49335e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49335e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 1.59854e-02	AbsError: 1.42550e+15
+    Region: "bulk"	RelError: 1.57930e-02	AbsError: 1.42550e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.67716e-05	AbsError: 1.42542e+15
+      Equation: "HoleContinuityEquation"	RelError: 2.77427e-04	AbsError: 8.12747e+10
+      Equation: "PotentialEquation"	RelError: 1.54888e-02	AbsError: 2.51614e-07
+    Region: "nitride0"	RelError: 8.17461e-06	AbsError: 1.11007e-05
+      Equation: "PotentialEquation"	RelError: 8.17461e-06	AbsError: 1.11007e-05
+    Region: "nitride1"	RelError: 9.89720e-06	AbsError: 9.63894e-06
+      Equation: "PotentialEquation"	RelError: 9.89720e-06	AbsError: 9.63894e-06
+    Region: "oxide"	RelError: 1.74323e-04	AbsError: 1.17510e-04
+      Equation: "PotentialEquation"	RelError: 1.74323e-04	AbsError: 1.17510e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 3.73112e-07	AbsError: 5.81883e+11
+    Region: "bulk"	RelError: 2.68633e-07	AbsError: 5.81883e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.94061e-09	AbsError: 5.81883e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.99937e-09	AbsError: 5.45213e+05
+      Equation: "PotentialEquation"	RelError: 2.62693e-07	AbsError: 7.66880e-11
+    Region: "nitride0"	RelError: 3.93755e-09	AbsError: 5.34829e-09
+      Equation: "PotentialEquation"	RelError: 3.93755e-09	AbsError: 5.34829e-09
+    Region: "nitride1"	RelError: 4.54638e-09	AbsError: 4.42774e-09
+      Equation: "PotentialEquation"	RelError: 4.54638e-09	AbsError: 4.42774e-09
+    Region: "oxide"	RelError: 9.59958e-08	AbsError: 7.54733e-08
+      Equation: "PotentialEquation"	RelError: 9.59958e-08	AbsError: 7.54733e-08
+Succeeded
+gate	1
+source	0.0	-3.443881780861369e-05	-4.3588867097837606e-32	-3.443881780861369e-05
+drain	0.6	3.443881780862762e-05	1.8567982087916704e-24	3.443881780862762e-05
+body	0.0	-8.98796113475387e-21	-7.898620086390385e-21	-1.6886581221144256e-20
+drain last end 6.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.30285e+05	AbsError: 1.28244e+19
+    Region: "bulk"	RelError: 1.30285e+05	AbsError: 1.28244e+19
+      Equation: "ElectronContinuityEquation"	RelError: 5.43070e+03	AbsError: 1.27229e+19
+      Equation: "HoleContinuityEquation"	RelError: 1.18976e+05	AbsError: 1.01490e+17
+      Equation: "PotentialEquation"	RelError: 5.87779e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.37888e-02	AbsError: 3.41161e-02
+      Equation: "PotentialEquation"	RelError: 2.37888e-02	AbsError: 3.41161e-02
+    Region: "nitride1"	RelError: 2.01297e-02	AbsError: 2.00072e-02
+      Equation: "PotentialEquation"	RelError: 2.01297e-02	AbsError: 2.00072e-02
+    Region: "oxide"	RelError: 1.40124e-01	AbsError: 9.99940e-02
+      Equation: "PotentialEquation"	RelError: 1.40124e-01	AbsError: 9.99940e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 7.34386e+03	AbsError: 1.53037e+18
+    Region: "bulk"	RelError: 7.34378e+03	AbsError: 1.53037e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.51797e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.24033e+16
+      Equation: "PotentialEquation"	RelError: 5.34578e+03	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 8.58378e-03	AbsError: 1.19868e-02
+      Equation: "PotentialEquation"	RelError: 8.58378e-03	AbsError: 1.19868e-02
+    Region: "nitride1"	RelError: 1.07287e-02	AbsError: 1.05502e-02
+      Equation: "PotentialEquation"	RelError: 1.07287e-02	AbsError: 1.05502e-02
+    Region: "oxide"	RelError: 6.08814e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08814e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 3.52937e+04	AbsError: 1.44976e+18
+    Region: "bulk"	RelError: 3.52937e+04	AbsError: 1.44976e+18
+      Equation: "ElectronContinuityEquation"	RelError: 3.25468e+00	AbsError: 1.44927e+18
+      Equation: "HoleContinuityEquation"	RelError: 3.52892e+04	AbsError: 4.91428e+14
+      Equation: "PotentialEquation"	RelError: 1.20538e+00	AbsError: 2.58988e-02
+    Region: "nitride0"	RelError: 7.82656e-03	AbsError: 1.10156e-02
+      Equation: "PotentialEquation"	RelError: 7.82656e-03	AbsError: 1.10156e-02
+    Region: "nitride1"	RelError: 6.11933e-03	AbsError: 5.98092e-03
+      Equation: "PotentialEquation"	RelError: 6.11933e-03	AbsError: 5.98092e-03
+    Region: "oxide"	RelError: 4.79235e-02	AbsError: 3.22697e-02
+      Equation: "PotentialEquation"	RelError: 4.79235e-02	AbsError: 3.22697e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.41968e+01	AbsError: 1.01313e+18
+    Region: "bulk"	RelError: 1.41470e+01	AbsError: 1.01313e+18
+      Equation: "ElectronContinuityEquation"	RelError: 5.74144e-01	AbsError: 1.01303e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99905e-01	AbsError: 9.61096e+13
+      Equation: "PotentialEquation"	RelError: 1.25730e+01	AbsError: 9.26630e-03
+    Region: "nitride0"	RelError: 5.51218e-03	AbsError: 7.80599e-03
+      Equation: "PotentialEquation"	RelError: 5.51218e-03	AbsError: 7.80599e-03
+    Region: "nitride1"	RelError: 2.91544e-03	AbsError: 2.84406e-03
+      Equation: "PotentialEquation"	RelError: 2.91544e-03	AbsError: 2.84406e-03
+    Region: "oxide"	RelError: 4.13086e-02	AbsError: 2.53518e-02
+      Equation: "PotentialEquation"	RelError: 4.13086e-02	AbsError: 2.53518e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 9.99208e-01	AbsError: 5.01335e+17
+    Region: "bulk"	RelError: 9.80472e-01	AbsError: 5.01335e+17
+      Equation: "ElectronContinuityEquation"	RelError: 2.94107e-02	AbsError: 5.01231e+17
+      Equation: "HoleContinuityEquation"	RelError: 2.02954e-02	AbsError: 1.04066e+14
+      Equation: "PotentialEquation"	RelError: 9.30766e-01	AbsError: 1.79755e-04
+    Region: "nitride0"	RelError: 3.17909e-03	AbsError: 4.51359e-03
+      Equation: "PotentialEquation"	RelError: 3.17909e-03	AbsError: 4.51359e-03
+    Region: "nitride1"	RelError: 6.22366e-04	AbsError: 6.06143e-04
+      Equation: "PotentialEquation"	RelError: 6.22366e-04	AbsError: 6.06143e-04
+    Region: "oxide"	RelError: 1.49340e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49340e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 9.45331e-04	AbsError: 1.33328e+15
+    Region: "bulk"	RelError: 7.59484e-04	AbsError: 1.33328e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.81331e-05	AbsError: 1.33321e+15
+      Equation: "HoleContinuityEquation"	RelError: 4.54992e-04	AbsError: 7.24723e+10
+      Equation: "PotentialEquation"	RelError: 2.76359e-04	AbsError: 2.59084e-07
+    Region: "nitride0"	RelError: 7.50981e-06	AbsError: 1.06688e-05
+      Equation: "PotentialEquation"	RelError: 7.50981e-06	AbsError: 1.06688e-05
+    Region: "nitride1"	RelError: 9.50387e-06	AbsError: 9.25623e-06
+      Equation: "PotentialEquation"	RelError: 9.50387e-06	AbsError: 9.25623e-06
+    Region: "oxide"	RelError: 1.68833e-04	AbsError: 1.14618e-04
+      Equation: "PotentialEquation"	RelError: 1.68833e-04	AbsError: 1.14618e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.10846e-07	AbsError: 5.65425e+11
+    Region: "bulk"	RelError: 1.16127e-08	AbsError: 5.65425e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.86104e-09	AbsError: 5.65424e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.91653e-09	AbsError: 5.91038e+05
+      Equation: "PotentialEquation"	RelError: 5.83514e-09	AbsError: 7.46037e-11
+    Region: "nitride0"	RelError: 3.78045e-09	AbsError: 5.37067e-09
+      Equation: "PotentialEquation"	RelError: 3.78045e-09	AbsError: 5.37067e-09
+    Region: "nitride1"	RelError: 4.53976e-09	AbsError: 4.42147e-09
+      Equation: "PotentialEquation"	RelError: 4.53976e-09	AbsError: 4.42147e-09
+    Region: "oxide"	RelError: 9.09128e-08	AbsError: 6.96144e-08
+      Equation: "PotentialEquation"	RelError: 9.09128e-08	AbsError: 6.96144e-08
+Succeeded
+gate	1
+source	0.0	-3.691864495939976e-05	-4.688938050785616e-32	-3.691864495939976e-05
+drain	0.7	3.6918644959399704e-05	1.8650438350160445e-24	3.6918644959399704e-05
+body	0.0	-9.529609116281326e-21	-9.03004953175943e-21	-1.8559658648040756e-20
+drain last end 7.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 6.13320e+04	AbsError: 1.24513e+19
+    Region: "bulk"	RelError: 6.13318e+04	AbsError: 1.24513e+19
+      Equation: "ElectronContinuityEquation"	RelError: 6.25476e+03	AbsError: 1.23558e+19
+      Equation: "HoleContinuityEquation"	RelError: 5.21374e+04	AbsError: 9.55016e+16
+      Equation: "PotentialEquation"	RelError: 2.93966e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.29636e-02	AbsError: 3.41344e-02
+      Equation: "PotentialEquation"	RelError: 2.29636e-02	AbsError: 3.41344e-02
+    Region: "nitride1"	RelError: 2.01320e-02	AbsError: 2.00103e-02
+      Equation: "PotentialEquation"	RelError: 2.01320e-02	AbsError: 2.00103e-02
+    Region: "oxide"	RelError: 1.40125e-01	AbsError: 9.99948e-02
+      Equation: "PotentialEquation"	RelError: 1.40125e-01	AbsError: 9.99948e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 2.21704e+03	AbsError: 1.47750e+18
+    Region: "bulk"	RelError: 2.21696e+03	AbsError: 1.47750e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.46640e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.11013e+16
+      Equation: "PotentialEquation"	RelError: 2.18963e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 8.24848e-03	AbsError: 1.20357e-02
+      Equation: "PotentialEquation"	RelError: 8.24848e-03	AbsError: 1.20357e-02
+    Region: "nitride1"	RelError: 1.06314e-02	AbsError: 1.04559e-02
+      Equation: "PotentialEquation"	RelError: 1.06314e-02	AbsError: 1.04559e-02
+    Region: "oxide"	RelError: 6.08819e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08819e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 1.74926e+04	AbsError: 1.44353e+18
+    Region: "bulk"	RelError: 1.74925e+04	AbsError: 1.44353e+18
+      Equation: "ElectronContinuityEquation"	RelError: 1.00900e+00	AbsError: 1.44316e+18
+      Equation: "HoleContinuityEquation"	RelError: 1.74913e+04	AbsError: 3.71846e+14
+      Equation: "PotentialEquation"	RelError: 2.59192e-01	AbsError: 2.58993e-02
+    Region: "nitride0"	RelError: 7.47553e-03	AbsError: 1.09900e-02
+      Equation: "PotentialEquation"	RelError: 7.47553e-03	AbsError: 1.09900e-02
+    Region: "nitride1"	RelError: 6.25636e-03	AbsError: 6.11486e-03
+      Equation: "PotentialEquation"	RelError: 6.25636e-03	AbsError: 6.11486e-03
+    Region: "oxide"	RelError: 4.79236e-02	AbsError: 3.18016e-02
+      Equation: "PotentialEquation"	RelError: 4.79236e-02	AbsError: 3.18016e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.84004e+00	AbsError: 1.01347e+18
+    Region: "bulk"	RelError: 1.79081e+00	AbsError: 1.01347e+18
+      Equation: "ElectronContinuityEquation"	RelError: 4.14645e-01	AbsError: 1.01338e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99806e-01	AbsError: 8.41590e+13
+      Equation: "PotentialEquation"	RelError: 3.76355e-01	AbsError: 9.26946e-03
+    Region: "nitride0"	RelError: 5.27967e-03	AbsError: 7.80603e-03
+      Equation: "PotentialEquation"	RelError: 5.27967e-03	AbsError: 7.80603e-03
+    Region: "nitride1"	RelError: 2.88200e-03	AbsError: 2.81162e-03
+      Equation: "PotentialEquation"	RelError: 2.88200e-03	AbsError: 2.81162e-03
+    Region: "oxide"	RelError: 4.10721e-02	AbsError: 2.52064e-02
+      Equation: "PotentialEquation"	RelError: 4.10721e-02	AbsError: 2.52064e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 3.58430e-01	AbsError: 5.01432e+17
+    Region: "bulk"	RelError: 3.39827e-01	AbsError: 5.01432e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.01610e-02	AbsError: 5.01340e+17
+      Equation: "HoleContinuityEquation"	RelError: 2.29795e-02	AbsError: 9.20610e+13
+      Equation: "PotentialEquation"	RelError: 2.86687e-01	AbsError: 1.73007e-04
+    Region: "nitride0"	RelError: 3.04529e-03	AbsError: 4.51448e-03
+      Equation: "PotentialEquation"	RelError: 3.04529e-03	AbsError: 4.51448e-03
+    Region: "nitride1"	RelError: 6.22783e-04	AbsError: 6.06571e-04
+      Equation: "PotentialEquation"	RelError: 6.22783e-04	AbsError: 6.06571e-04
+    Region: "oxide"	RelError: 1.49343e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49343e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 8.96165e-04	AbsError: 1.28494e+15
+    Region: "bulk"	RelError: 7.19355e-04	AbsError: 1.28494e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.89223e-05	AbsError: 1.28488e+15
+      Equation: "HoleContinuityEquation"	RelError: 5.53884e-04	AbsError: 6.36962e+10
+      Equation: "PotentialEquation"	RelError: 1.36548e-04	AbsError: 2.54952e-07
+    Region: "nitride0"	RelError: 7.01064e-06	AbsError: 1.03953e-05
+      Equation: "PotentialEquation"	RelError: 7.01064e-06	AbsError: 1.03953e-05
+    Region: "nitride1"	RelError: 9.34065e-06	AbsError: 9.09758e-06
+      Equation: "PotentialEquation"	RelError: 9.34065e-06	AbsError: 9.09758e-06
+    Region: "oxide"	RelError: 1.60459e-04	AbsError: 1.10876e-04
+      Equation: "PotentialEquation"	RelError: 1.60459e-04	AbsError: 1.10876e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.10372e-07	AbsError: 5.53890e+11
+    Region: "bulk"	RelError: 1.36278e-08	AbsError: 5.53890e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.80622e-09	AbsError: 5.53889e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.86049e-09	AbsError: 6.23300e+05
+      Equation: "PotentialEquation"	RelError: 7.96105e-09	AbsError: 7.31839e-11
+    Region: "nitride0"	RelError: 3.57671e-09	AbsError: 5.30432e-09
+      Equation: "PotentialEquation"	RelError: 3.57671e-09	AbsError: 5.30432e-09
+    Region: "nitride1"	RelError: 4.52947e-09	AbsError: 4.41160e-09
+      Equation: "PotentialEquation"	RelError: 4.52947e-09	AbsError: 4.41160e-09
+    Region: "oxide"	RelError: 8.86381e-08	AbsError: 6.81480e-08
+      Equation: "PotentialEquation"	RelError: 8.86381e-08	AbsError: 6.81480e-08
+Succeeded
+gate	1
+source	0.0	-3.909813544452955e-05	-4.982449612377515e-32	-3.909813544452955e-05
+drain	0.7999999999999999	3.9098135444516426e-05	1.8723425888067542e-24	3.9098135444516426e-05
+body	0.0	-1.007876562248895e-20	-9.924294584089207e-21	-2.0003060206578156e-20
+drain last end 8.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 1.77294e+04	AbsError: 1.20160e+19
+    Region: "bulk"	RelError: 1.77292e+04	AbsError: 1.20160e+19
+      Equation: "ElectronContinuityEquation"	RelError: 1.17907e+04	AbsError: 1.19259e+19
+      Equation: "HoleContinuityEquation"	RelError: 4.30183e+03	AbsError: 9.00985e+16
+      Equation: "PotentialEquation"	RelError: 1.63671e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.22135e-02	AbsError: 3.41736e-02
+      Equation: "PotentialEquation"	RelError: 2.22135e-02	AbsError: 3.41736e-02
+    Region: "nitride1"	RelError: 2.01898e-02	AbsError: 2.00696e-02
+      Equation: "PotentialEquation"	RelError: 2.01898e-02	AbsError: 2.00696e-02
+    Region: "oxide"	RelError: 1.40125e-01	AbsError: 9.99953e-02
+      Equation: "PotentialEquation"	RelError: 1.40125e-01	AbsError: 9.99953e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 9.66749e+03	AbsError: 1.40630e+18
+    Region: "bulk"	RelError: 9.66742e+03	AbsError: 1.40630e+18
+      Equation: "ElectronContinuityEquation"	RelError: 4.64223e+03	AbsError: 1.39625e+18
+      Equation: "HoleContinuityEquation"	RelError: 4.89701e+03	AbsError: 1.00570e+16
+      Equation: "PotentialEquation"	RelError: 1.28181e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 7.90511e-03	AbsError: 1.20305e-02
+      Equation: "PotentialEquation"	RelError: 7.90511e-03	AbsError: 1.20305e-02
+    Region: "nitride1"	RelError: 1.06372e-02	AbsError: 1.04626e-02
+      Equation: "PotentialEquation"	RelError: 1.06372e-02	AbsError: 1.04626e-02
+    Region: "oxide"	RelError: 6.08822e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08822e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 4.15413e+03	AbsError: 1.44678e+18
+    Region: "bulk"	RelError: 4.15407e+03	AbsError: 1.44678e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99998e-01	AbsError: 1.44652e+18
+      Equation: "HoleContinuityEquation"	RelError: 4.15260e+03	AbsError: 2.57418e+14
+      Equation: "PotentialEquation"	RelError: 4.63445e-01	AbsError: 2.58995e-02
+    Region: "nitride0"	RelError: 7.14217e-03	AbsError: 1.09476e-02
+      Equation: "PotentialEquation"	RelError: 7.14217e-03	AbsError: 1.09476e-02
+    Region: "nitride1"	RelError: 6.33452e-03	AbsError: 6.19131e-03
+      Equation: "PotentialEquation"	RelError: 6.33452e-03	AbsError: 6.19131e-03
+    Region: "oxide"	RelError: 4.79237e-02	AbsError: 3.14845e-02
+      Equation: "PotentialEquation"	RelError: 4.79237e-02	AbsError: 3.14845e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 1.62025e+00	AbsError: 1.01357e+18
+    Region: "bulk"	RelError: 1.57152e+00	AbsError: 1.01357e+18
+      Equation: "ElectronContinuityEquation"	RelError: 2.56012e-01	AbsError: 1.01349e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99224e-01	AbsError: 7.63268e+13
+      Equation: "PotentialEquation"	RelError: 3.16279e-01	AbsError: 9.27147e-03
+    Region: "nitride0"	RelError: 5.05800e-03	AbsError: 7.79242e-03
+      Equation: "PotentialEquation"	RelError: 5.05800e-03	AbsError: 7.79242e-03
+    Region: "nitride1"	RelError: 2.86033e-03	AbsError: 2.79135e-03
+      Equation: "PotentialEquation"	RelError: 2.86033e-03	AbsError: 2.79135e-03
+    Region: "oxide"	RelError: 4.08186e-02	AbsError: 2.50508e-02
+      Equation: "PotentialEquation"	RelError: 4.08186e-02	AbsError: 2.50508e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 3.37483e-01	AbsError: 5.01511e+17
+    Region: "bulk"	RelError: 3.19003e-01	AbsError: 5.01511e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.14153e-02	AbsError: 5.01428e+17
+      Equation: "HoleContinuityEquation"	RelError: 2.47615e-02	AbsError: 8.33227e+13
+      Equation: "PotentialEquation"	RelError: 2.62827e-01	AbsError: 1.65613e-04
+    Region: "nitride0"	RelError: 2.92210e-03	AbsError: 4.51500e-03
+      Equation: "PotentialEquation"	RelError: 2.92210e-03	AbsError: 4.51500e-03
+    Region: "nitride1"	RelError: 6.22834e-04	AbsError: 6.06639e-04
+      Equation: "PotentialEquation"	RelError: 6.22834e-04	AbsError: 6.06639e-04
+    Region: "oxide"	RelError: 1.49345e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49345e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 1.03768e-03	AbsError: 1.21307e+15
+    Region: "bulk"	RelError: 8.63809e-04	AbsError: 1.21307e+15
+      Equation: "ElectronContinuityEquation"	RelError: 2.84416e-05	AbsError: 1.21301e+15
+      Equation: "HoleContinuityEquation"	RelError: 6.51722e-04	AbsError: 5.79077e+10
+      Equation: "PotentialEquation"	RelError: 1.83646e-04	AbsError: 2.40023e-07
+    Region: "nitride0"	RelError: 6.53940e-06	AbsError: 1.01042e-05
+      Equation: "PotentialEquation"	RelError: 6.53940e-06	AbsError: 1.01042e-05
+    Region: "nitride1"	RelError: 9.10174e-06	AbsError: 8.86516e-06
+      Equation: "PotentialEquation"	RelError: 9.10174e-06	AbsError: 8.86516e-06
+    Region: "oxide"	RelError: 1.58228e-04	AbsError: 1.11108e-04
+      Equation: "PotentialEquation"	RelError: 1.58228e-04	AbsError: 1.11108e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.09836e-07	AbsError: 5.35323e+11
+    Region: "bulk"	RelError: 1.00790e-08	AbsError: 5.35323e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.71559e-09	AbsError: 5.35322e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.76742e-09	AbsError: 6.45179e+05
+      Equation: "PotentialEquation"	RelError: 4.59599e-09	AbsError: 7.08192e-11
+    Region: "nitride0"	RelError: 3.41800e-09	AbsError: 5.28215e-09
+      Equation: "PotentialEquation"	RelError: 3.41800e-09	AbsError: 5.28215e-09
+    Region: "nitride1"	RelError: 4.49209e-09	AbsError: 4.37533e-09
+      Equation: "PotentialEquation"	RelError: 4.49209e-09	AbsError: 4.37533e-09
+    Region: "oxide"	RelError: 9.18473e-08	AbsError: 7.21162e-08
+      Equation: "PotentialEquation"	RelError: 9.18473e-08	AbsError: 7.21162e-08
+Succeeded
+gate	1
+source	0.0	-4.107756771550115e-05	-5.252276613663465e-32	-4.107756771550115e-05
+drain	0.8999999999999999	4.1077567715502125e-05	1.8790113048193944e-24	4.1077567715502125e-05
+body	0.0	-1.0638630189229137e-20	-1.0821775954721538e-20	-2.1460406143950673e-20
+drain last end 9.000000e-01 1.000000e+00
+Region "bulk" on device "mosfet" has equations 0:151337
+Region "gate" on device "mosfet" has no equations.
+Region "nitride0" on device "mosfet" has equations 151338:154026
+Region "nitride1" on device "mosfet" has equations 154027:156737
+Region "oxide" on device "mosfet" has equations 156738:166224
+Device "mosfet" has equations 0:166224
+number of equations 166225
+Iteration: 0
+  Device: "mosfet"	RelError: 3.21225e+04	AbsError: 1.15161e+19
+    Region: "bulk"	RelError: 3.21224e+04	AbsError: 1.15161e+19
+      Equation: "ElectronContinuityEquation"	RelError: 2.18708e+04	AbsError: 1.14306e+19
+      Equation: "HoleContinuityEquation"	RelError: 9.09603e+03	AbsError: 8.54690e+16
+      Equation: "PotentialEquation"	RelError: 1.15557e+03	AbsError: 4.09542e-02
+    Region: "nitride0"	RelError: 2.15233e-02	AbsError: 3.42252e-02
+      Equation: "PotentialEquation"	RelError: 2.15233e-02	AbsError: 3.42252e-02
+    Region: "nitride1"	RelError: 2.02821e-02	AbsError: 2.01639e-02
+      Equation: "PotentialEquation"	RelError: 2.02821e-02	AbsError: 2.01639e-02
+    Region: "oxide"	RelError: 1.40126e-01	AbsError: 9.99957e-02
+      Equation: "PotentialEquation"	RelError: 1.40126e-01	AbsError: 9.99957e-02
+Iteration: 1
+  Device: "mosfet"	RelError: 2.37632e+03	AbsError: 1.32862e+18
+    Region: "bulk"	RelError: 2.37624e+03	AbsError: 1.32862e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99000e+02	AbsError: 1.31944e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99000e+02	AbsError: 9.17805e+15
+      Equation: "PotentialEquation"	RelError: 3.78245e+02	AbsError: 3.07632e-02
+    Region: "nitride0"	RelError: 7.50200e-03	AbsError: 1.18870e-02
+      Equation: "PotentialEquation"	RelError: 7.50200e-03	AbsError: 1.18870e-02
+    Region: "nitride1"	RelError: 1.06943e-02	AbsError: 1.05194e-02
+      Equation: "PotentialEquation"	RelError: 1.06943e-02	AbsError: 1.05194e-02
+    Region: "oxide"	RelError: 6.08823e-02	AbsError: 4.09542e-02
+      Equation: "PotentialEquation"	RelError: 6.08823e-02	AbsError: 4.09542e-02
+Iteration: 2
+  Device: "mosfet"	RelError: 6.57907e+03	AbsError: 1.45371e+18
+    Region: "bulk"	RelError: 6.57901e+03	AbsError: 1.45371e+18
+      Equation: "ElectronContinuityEquation"	RelError: 9.99998e-01	AbsError: 1.45352e+18
+      Equation: "HoleContinuityEquation"	RelError: 6.57273e+03	AbsError: 1.91346e+14
+      Equation: "PotentialEquation"	RelError: 5.27940e+00	AbsError: 2.58984e-02
+    Region: "nitride0"	RelError: 6.89132e-03	AbsError: 1.09951e-02
+      Equation: "PotentialEquation"	RelError: 6.89132e-03	AbsError: 1.09951e-02
+    Region: "nitride1"	RelError: 6.37320e-03	AbsError: 6.22930e-03
+      Equation: "PotentialEquation"	RelError: 6.37320e-03	AbsError: 6.22930e-03
+    Region: "oxide"	RelError: 4.79238e-02	AbsError: 3.14150e-02
+      Equation: "PotentialEquation"	RelError: 4.79238e-02	AbsError: 3.14150e-02
+Iteration: 3
+  Device: "mosfet"	RelError: 2.64301e+00	AbsError: 1.01340e+18
+    Region: "bulk"	RelError: 2.59322e+00	AbsError: 1.01340e+18
+      Equation: "ElectronContinuityEquation"	RelError: 2.63381e-01	AbsError: 1.01333e+18
+      Equation: "HoleContinuityEquation"	RelError: 9.99495e-01	AbsError: 7.04336e+13
+      Equation: "PotentialEquation"	RelError: 1.33034e+00	AbsError: 9.27281e-03
+    Region: "nitride0"	RelError: 4.84970e-03	AbsError: 7.77541e-03
+      Equation: "PotentialEquation"	RelError: 4.84970e-03	AbsError: 7.77541e-03
+    Region: "nitride1"	RelError: 2.91842e-03	AbsError: 2.84940e-03
+      Equation: "PotentialEquation"	RelError: 2.91842e-03	AbsError: 2.84940e-03
+    Region: "oxide"	RelError: 4.20218e-02	AbsError: 2.57881e-02
+      Equation: "PotentialEquation"	RelError: 4.20218e-02	AbsError: 2.57881e-02
+Iteration: 4
+  Device: "mosfet"	RelError: 3.06664e+00	AbsError: 5.01798e+17
+    Region: "bulk"	RelError: 3.04832e+00	AbsError: 5.01798e+17
+      Equation: "ElectronContinuityEquation"	RelError: 3.25597e-02	AbsError: 5.01721e+17
+      Equation: "HoleContinuityEquation"	RelError: 2.43530e-02	AbsError: 7.69853e+13
+      Equation: "PotentialEquation"	RelError: 2.99141e+00	AbsError: 1.77514e-04
+    Region: "nitride0"	RelError: 2.81507e-03	AbsError: 4.52608e-03
+      Equation: "PotentialEquation"	RelError: 2.81507e-03	AbsError: 4.52608e-03
+    Region: "nitride1"	RelError: 5.66565e-04	AbsError: 5.51849e-04
+      Equation: "PotentialEquation"	RelError: 5.66565e-04	AbsError: 5.51849e-04
+    Region: "oxide"	RelError: 1.49346e-02	AbsError: 9.16533e-03
+      Equation: "PotentialEquation"	RelError: 1.49346e-02	AbsError: 9.16533e-03
+Iteration: 5
+  Device: "mosfet"	RelError: 2.86917e-03	AbsError: 1.16678e+15
+    Region: "bulk"	RelError: 2.67324e-03	AbsError: 1.16678e+15
+      Equation: "ElectronContinuityEquation"	RelError: 3.10423e-05	AbsError: 1.16673e+15
+      Equation: "HoleContinuityEquation"	RelError: 6.16961e-04	AbsError: 5.24175e+10
+      Equation: "PotentialEquation"	RelError: 2.02524e-03	AbsError: 2.18341e-07
+    Region: "nitride0"	RelError: 6.16909e-06	AbsError: 9.91875e-06
+      Equation: "PotentialEquation"	RelError: 6.16909e-06	AbsError: 9.91875e-06
+    Region: "nitride1"	RelError: 9.26945e-06	AbsError: 9.02877e-06
+      Equation: "PotentialEquation"	RelError: 9.26945e-06	AbsError: 9.02877e-06
+    Region: "oxide"	RelError: 1.80488e-04	AbsError: 1.10751e-04
+      Equation: "PotentialEquation"	RelError: 1.80488e-04	AbsError: 1.10751e-04
+Iteration: 6
+  Device: "mosfet"	RelError: 1.56686e-07	AbsError: 5.15700e+11
+    Region: "bulk"	RelError: 5.38772e-08	AbsError: 5.15700e+11
+      Equation: "ElectronContinuityEquation"	RelError: 2.61936e-09	AbsError: 5.15699e+11
+      Equation: "HoleContinuityEquation"	RelError: 2.66899e-09	AbsError: 6.58827e+05
+      Equation: "PotentialEquation"	RelError: 4.85889e-08	AbsError: 6.83152e-11
+    Region: "nitride0"	RelError: 3.21810e-09	AbsError: 5.17410e-09
+      Equation: "PotentialEquation"	RelError: 3.21810e-09	AbsError: 5.17410e-09
+    Region: "nitride1"	RelError: 4.64408e-09	AbsError: 4.52350e-09
+      Equation: "PotentialEquation"	RelError: 4.64408e-09	AbsError: 4.52350e-09
+    Region: "oxide"	RelError: 9.49469e-08	AbsError: 6.82846e-08
+      Equation: "PotentialEquation"	RelError: 9.49469e-08	AbsError: 6.82846e-08
+Succeeded
+gate	1
+source	0.0	-4.291485294652522e-05	-5.505945982106904e-32	-4.291485294652522e-05
+drain	0.9999999999999999	4.291485294654071e-05	1.8852334259104916e-24	4.291485294654071e-05
+body	0.0	-1.1211253242457668e-20	-1.1779028655152125e-20	-2.2990281897609792e-20
+
+real	24m59.129s
+user	89m55.980s
+sys	2m25.939s

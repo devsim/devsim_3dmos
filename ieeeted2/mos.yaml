@@ -1,0 +1,80 @@
+
+# This section is to give priority to the created entities
+# and those already in the input mesh file
+# For generated interfaces, the higher priority name will be first.
+# For example, "bulk_nlayer" since "bulk" has higher priority.
+name_priority:
+  - gate
+  - bulk
+  - oxide
+  - nitride0
+  - nitride1
+  - source_contact
+  - drain_contact
+  - body_contact
+  - gate_contact
+# since they are already a physical name in the .geo file,
+# the contacts are not likely to have any dropped elements
+# touching other interfaces or contacts
+# they may not necessarily be needed in the name_priority section
+
+# contacts we defined in the .geo file
+# - source_contact
+# - drain_contact
+# - body_contact
+# - gate_contact
+
+# contact_regions are used to create contacts at their interface with other regions
+# they can be removed from the final mesh by setting "remove: True"
+#contact_regions:
+#  - contact: top_volume
+#    remove: True
+#  - contact: bot_volume
+#    remove: True
+
+# TODO: finish for automatic device loading
+# this section is not currently used
+regions:
+  - region: gate
+    material: silicon
+  - region: bulk
+    material: silicon
+  - region: oxide
+    material: oxide
+  - region: nitride0
+    material: nitride
+  - region: nitride1
+    material: nitride
+
+# TODO: finish for automatic device loading
+# TODO: has circuit_node flag?
+#
+contact:
+  - contact: gate_contact
+    material: metal
+  - contact: source_contact
+    material: metal
+  - contact: drain_contact
+    material: metal
+  - contact: body_contact
+    material: metal
+
+
+#
+# This section can be used to name contacts and interfaces
+# at the intersection between two regions.
+# Otherwise interfaces are generated automatically with names
+# based on the two regions (e.g. bulk_nlayer)
+#
+# enforces specific names to the added interfaces
+# TODO: error out if interface not mentioned in input
+interfaces:
+  - interface: bulk_oxide_interface
+    regions: [bulk, oxide]
+  - interface: nitride0_oxide_interface
+    regions: [nitride0, oxide]
+  - interface: nitride1_oxide_interface
+    regions: [nitride1, oxide]
+#  - interface: gate_oxide_interface
+#    regions: [gate, oxide]
+
