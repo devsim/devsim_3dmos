@@ -68,8 +68,8 @@ def CreateNormalElectricFieldFromInterfaceNormal(device, region, interface):
     else:
         raise RuntimeError("dimension %d not supported" % dimension)
 
-    CreateElementModel2d          (device, region, "Enormal", Enormal)
-    CreateElementModelDerivative2d(device, region, "Enormal", Enormal, "Potential")
+    CreateElementModel          (device, region, "Enormal", Enormal)
+    CreateElementModelDerivative(device, region, "Enormal", Enormal, "Potential")
 
 
 ###### make this on a per carrier basis function
@@ -110,58 +110,58 @@ def CreateNormalElectricFieldFromCurrentFlow(device, region, low_curr):
     else:
         raise RuntimeError("dimension %d not supported" % dimension)
 
-    CreateElementModel2d(device, region, "{0}_mag".format(low_curr), "{0}".format(J_lf_mag))
+    CreateElementModel(device, region, "{0}_mag".format(low_curr), "{0}".format(J_lf_mag))
 
     if do_j_derivatives:
         #derivatives of the magnitude of the current
         for j in ("Electrons", "Holes", "Potential"):
             for i in ens:
                 ex = exs.format(low_curr, j, i)
-                CreateElementModel2d(device, region, "{0}_mag:{1}{2}".format(low_curr, j, i), ex)
+                CreateElementModel(device, region, "{0}_mag:{1}{2}".format(low_curr, j, i), ex)
 
     ### This calculates the normalized current in each direction
     for i in  dirs:
         J_norm="ifelse({0}_mag > 0, {0}_{1} / max({0}_mag, 1e-300), 0)".format(low_curr, i)
-        CreateElementModel2d(device, region, "{0}_norm_{1}".format(low_curr, i), J_norm)
+        CreateElementModel(device, region, "{0}_norm_{1}".format(low_curr, i), J_norm)
         ### TODO: figure out if the directional derivative makes sense
         if do_j_derivatives:
-            CreateElementModelDerivative2d(device, region, "{0}_norm_{1}".format(low_curr, i), J_norm, "Electrons", "Holes", "Potential")
+            CreateElementModelDerivative(device, region, "{0}_norm_{1}".format(low_curr, i), J_norm, "Electrons", "Holes", "Potential")
 
     #### Get the electric field on the element
     ds.element_from_edge_model(edge_model="ElectricField", device=device, region=region)
     ds.element_from_edge_model(edge_model="ElectricField", device=device, region=region, derivative="Potential")
 
     #### Get the parallel e field to current flow
-    CreateElementModel2d          (device, region, "Eparallel_{0}".format(low_curr), Eparallel_J)
-    CreateElementModelDerivative2d(device, region, "Eparallel_{0}".format(low_curr), Eparallel_J, "Potential")
+    CreateElementModel          (device, region, "Eparallel_{0}".format(low_curr), Eparallel_J)
+    CreateElementModelDerivative(device, region, "Eparallel_{0}".format(low_curr), Eparallel_J, "Potential")
 
     # magnitude e field
-    CreateElementModel2d(device, region, "ElectricField_mag", ElectricField_mag)
+    CreateElementModel(device, region, "ElectricField_mag", ElectricField_mag)
     #the , turns this into an actual tuple
     for j in ("Potential",):
         for i in dirs:
             ex=exef.format(j, i)
-            CreateElementModel2d(device, region, "ElectricField_mag:{0}{1}".format(j, i), ex)
+            CreateElementModel(device, region, "ElectricField_mag:{0}{1}".format(j, i), ex)
 
     #### Get the normal e field to current flow
     Enormal_J="pow(max(ElectricField_mag^2 - Eparallel_{0}^2,1e-300), 0.5)".format(low_curr)
-    CreateElementModel2d(device, region, "Enormal_{0}".format(low_curr), Enormal_J)
+    CreateElementModel(device, region, "Enormal_{0}".format(low_curr), Enormal_J)
 
-    #CreateElementModelDerivative2d $device $region Enormal_{low_curr} {Enormal_J} Electrons Holes Potential
+    #CreateElementModelDerivative $device $region Enormal_{low_curr} {Enormal_J} Electrons Holes Potential
     for j in ("Electrons", "Holes", "Potential"):
         for i in dirs:
             ex="(ElectricField_mag * ElectricField_mag:{0}{1} - Eparallel_{2} * Eparallel_{2}:{0}{1})/Enormal_{2}".format(j, i, low_curr)
-            CreateElementModel2d(device, region, "Enormal_{0}:{1}{2}".format(low_curr, j, i), ex)
+            CreateElementModel(device, region, "Enormal_{0}:{1}{2}".format(low_curr, j, i), ex)
 
-def CreateElementElectronCurrent2d(device, region, name, mobility_model, electric_field):
+def CreateElementElectronCurrent(device, region, name, mobility_model, electric_field):
     Jn = "ElectronCharge*{mobility_model}*EdgeInverseLength*V_t*kahan3(Electrons@en1*Bern01,  Electrons@en1*EdgeLength*{electric_field}/V_t,  -Electrons@en0*Bern01)".format(mobility_model=mobility_model, electric_field=electric_field)
-    CreateElementModel2d(device, region, name, Jn)
+    CreateElementModel(device, region, name, Jn)
     for i in ("Electrons", "Holes", "Potential"):
-        CreateElementModelDerivative2d(device, region, name, Jn, i)
+        CreateElementModelDerivative(device, region, name, Jn, i)
 
-def CreateElementHoleCurrent2d(device, region, name, mobility_model, electric_field):
+def CreateElementHoleCurrent(device, region, name, mobility_model, electric_field):
     Jp ="-ElectronCharge*{mobility_model}*EdgeInverseLength*V_t*kahan3(Holes@en1*Bern01, -Holes@en0*Bern01, -Holes@en0*EdgeLength*{electric_field}/V_t)".format(mobility_model=mobility_model, electric_field=electric_field)
-    CreateElementModel2d(device, region, name, Jp)
+    CreateElementModel(device, region, name, Jp)
     for i in ("Electrons", "Holes", "Potential"):
-        CreateElementModelDerivative2d(device, region, name, Jp, i)
+        CreateElementModelDerivative(device, region, name, Jp, i)
 

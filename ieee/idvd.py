@@ -98,9 +98,9 @@ rampbias(device, "gate",  vgmax, 0.025, 0.01, 10, 1e-5, 1e30, mos90.printAllCurr
 printer(device)
 rampbias(device, "drain", vdmax, 0.025, 0.001, 25, 1e-5, 1e30, printer)
 
-##CreateElementModel2d(device, "bulk", "mu_r0", "mu_vsat_e/mu_bulk_e")
-##CreateElementModel2d(device, "bulk", "mu_r1", "mu_e_0/mu_bulk_e")
-##CreateElementModel2d(device, "bulk", "mu_r2", "mu_vsat_e/mu_e_0")
+##CreateElementModel(device, "bulk", "mu_r0", "mu_vsat_e/mu_bulk_e")
+##CreateElementModel(device, "bulk", "mu_r1", "mu_e_0/mu_bulk_e")
+##CreateElementModel(device, "bulk", "mu_r2", "mu_vsat_e/mu_e_0")
 ##
 ##gate_node=ds.get_element_node_list(device=device, region="oxide", contact="gate")[0][0]
 ##gate_potential = ds.get_node_model_values(device=device, region="oxide", name="Potential")[gate_node]

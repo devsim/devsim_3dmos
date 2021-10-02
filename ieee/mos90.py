@@ -179,37 +179,37 @@ def setup_eeb_dd(model, hfs):
 
         if model == "bulk":
             if not hfs:
-                mos_physics.CreateElementElectronCurrent2d(device, r, "ElementElectronCurrent", "mu_bulk_e", edrive)
+                mos_physics.CreateElementElectronCurrent(device, r, "ElementElectronCurrent", "mu_bulk_e", edrive)
                 mos_physics.CreateElementElectronContinuityEquation(device, r, "ElementElectronCurrent")
             else:
                 kla.Philips_VelocitySaturation(device, r, "mu_vsat_e", "mu_bulk_e", ehfs, "vsat_e")
-                mos_physics.CreateElementElectronCurrent2d(device, r, "ElementElectronCurrent", "mu_vsat_e", edrive)
+                mos_physics.CreateElementElectronCurrent(device, r, "ElementElectronCurrent", "mu_vsat_e", edrive)
 
             mos_physics.CreateElementElectronContinuityEquation(device, r, "ElementElectronCurrent")
 
-            mos_physics.CreateElementHoleCurrent2d(device, r, "ElementHoleCurrent", "mu_bulk_h", "ElectricField")
+            mos_physics.CreateElementHoleCurrent(device, r, "ElementHoleCurrent", "mu_bulk_h", "ElectricField")
             mos_physics.CreateElementHoleContinuityEquation(device, r, "ElementHoleCurrent")
         elif model == "darwish":
             if not hfs:
                 kla.Philips_Surface_Mobility(device, r, "Enormal_ElectronCurrent", "Enormal_HoleCurrent")
-                mos_physics.CreateElementElectronCurrent2d(device, r, "ElementElectronCurrent", "mu_e_0", edrive)
+                mos_physics.CreateElementElectronCurrent(device, r, "ElementElectronCurrent", "mu_e_0", edrive)
             else:
                 kla.Philips_Surface_Mobility(device, r, "Enormal_ElectronCurrent", "Enormal_HoleCurrent")
                 kla.Philips_VelocitySaturation(device, r, "mu_vsat_e", "mu_e_0", ehfs, "vsat_e")
-                mos_physics.CreateElementElectronCurrent2d(device, r, "ElementElectronCurrent", "mu_vsat_e", edrive)
+                mos_physics.CreateElementElectronCurrent(device, r, "ElementElectronCurrent", "mu_vsat_e", edrive)
 
             mos_physics.CreateElementElectronContinuityEquation(device, r, "ElementElectronCurrent")
 
-            mos_physics.CreateElementHoleCurrent2d(device, r, "ElementHoleCurrent", "mu_bulk_h", "ElectricField")
+            mos_physics.CreateElementHoleCurrent(device, r, "ElementHoleCurrent", "mu_bulk_h", "ElectricField")
             mos_physics.CreateElementHoleContinuityEquation(device, r, "ElementHoleCurrent")
 
     # do element models for both electrons and holes
     for contact in silicon_contacts:
         mos_physics.CreateElementContactElectronContinuityEquation(device, contact, "ElementElectronCurrent")
         mos_physics.CreateElementContactHoleContinuityEquation(device, contact, "ElementHoleCurrent")
-#CreateElementModel2d(device, r, "mu_ratio", "mu_vsat_e/mu_bulk_e")
-#CreateElementModel2d(device, r, "mu_surf_ratio", "mu_e_0/mu_bulk_e")
-#CreateElementModel2d(device, r, "epar_ratio", "abs(Eparallel_ElectronCurrent/ElectricField_mag)")
+#CreateElementModel(device, r, "mu_ratio", "mu_vsat_e/mu_bulk_e")
+#CreateElementModel(device, r, "mu_surf_ratio", "mu_e_0/mu_bulk_e")
+#CreateElementModel(device, r, "epar_ratio", "abs(Eparallel_ElectronCurrent/ElectricField_mag)")
 #createElementElectronCurrent2d $device $region ElementElectronCurrent mu_n
 #createElementElectronCurrent2d $device $region ElementElectronCurrent mu_bulk_e
 

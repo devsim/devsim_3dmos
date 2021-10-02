@@ -202,8 +202,8 @@ def Philips_VelocitySaturation(device, region, mu_sat, mu_bulk, eparallel, vsat)
     #mu="ifelse(abs({jmag}) <= {jemin}, {mu_bulk}, 2*({mu_bulk}) / (1 + (1 + 4 * (max(({mu_bulk}) * {eparallel}, 0)/{vsat})^2)^0.5))".format(mu_bulk=mu_bulk, eparallel=eparallel, vsat=vsat, jmag=jmag, jemin=jemin)
     mu="2*({mu_bulk}) / (1 + (1 + 4 * ((({mu_bulk}) * {eparallel})/{vsat})^2)^0.5)".format(mu_bulk=mu_bulk, eparallel=eparallel, vsat=vsat)
     #mu="ifelse({jmag} <= {jemin}, {mu_bulk}, 2*({mu_bulk}) / (1 + (1 + 4 * nodiff(max(({mu_bulk}) * {eparallel}, 0)/{vsat})^2)^0.5))".format(mu_bulk=mu_bulk, eparallel=eparallel, vsat=vsat, jmag=jmag, jemin=jemin)
-    CreateElementModel2d           (device,  region, mu_sat, mu)
-    CreateElementModelDerivative2d (device,  region, mu_sat, mu, "Potential", "Electrons", "Holes")
+    CreateElementModel           (device,  region, mu_sat, mu)
+    CreateElementModelDerivative (device,  region, mu_sat, mu, "Potential", "Electrons", "Holes")
 
 #### Later on need model for temperature on edge
 #### Assumption is Enormal is a magnitude
@@ -232,17 +232,17 @@ def Philips_Surface_Mobility(device, region, enormal_e, enormal_h):
     #### Need to prevent ridiculous mobilities for small Enormal
     mu_ac_e="B_e /max({0},1e2) + (C_e * NI^tau_e * max({0},1e2)^(-1/3)) / T_prime_e".format(enormal_e)
     mu_ac_h="B_h /max({0},1e2) + (C_h * NI^tau_h * max({0},1e2)^(-1/3)) / T_prime_h".format(enormal_h)
-    CreateElementModel2d          (device, region, "mu_ac_e", mu_ac_e)
-    CreateElementModelDerivative2d(device, region, "mu_ac_e", mu_ac_e, "Potential")
-    CreateElementModel2d          (device, region, "mu_ac_h", mu_ac_h)
-    CreateElementModelDerivative2d(device, region, "mu_ac_h", mu_ac_h, "Potential")
+    CreateElementModel          (device, region, "mu_ac_e", mu_ac_e)
+    CreateElementModelDerivative(device, region, "mu_ac_e", mu_ac_e, "Potential")
+    CreateElementModel          (device, region, "mu_ac_h", mu_ac_h)
+    CreateElementModelDerivative(device, region, "mu_ac_h", mu_ac_h, "Potential")
 
     #gamma_e="A_e + alpha_e * (edgeElectrons + edgeHoles) * NI^(-eta_e)"
     #gamma_h="A_h + alpha_h * (edgeElectrons + edgeHoles) * NI^(-eta_h)"
-    #CreateElementModel2d          (device, region, "gamma_e", gamma_e)
-    #CreateElementModelDerivative2d(device, region, "gamma_e", gamma_e Potential Electrons Holes)
-    #CreateElementModel2d          (device, region, "gamma_h", gamma_h)
-    #CreateElementModelDerivative2d(device, region, "gamma_h", gamma_h Potential Electrons Holes)
+    #CreateElementModel          (device, region, "gamma_e", gamma_e)
+    #CreateElementModelDerivative(device, region, "gamma_e", gamma_e Potential Electrons Holes)
+    #CreateElementModel          (device, region, "gamma_h", gamma_h)
+    #CreateElementModelDerivative(device, region, "gamma_h", gamma_h Potential Electrons Holes)
 
     # Hopefully a less problematic formulation
     gamma_e="A_e + alpha_e * (Electrons + Holes) * NI_node^(-eta_e)"
@@ -261,20 +261,20 @@ def Philips_Surface_Mobility(device, region, enormal_e, enormal_h):
     mu_sr_h="delta_h *(max({0},1e2))^(-gamma_h)".format(enormal_h)
     #mu_sr_e="1e8"
     #mu_sr_h="1e8"
-    CreateElementModel2d          (device, region, "mu_sr_e", mu_sr_e)
-    CreateElementModelDerivative2d(device, region, "mu_sr_e", mu_sr_e, "Potential", "Electrons", "Holes")
-    CreateElementModel2d          (device, region, "mu_sr_h", mu_sr_h)
-    CreateElementModelDerivative2d(device, region, "mu_sr_h", mu_sr_h, "Potential", "Electrons", "Holes")
+    CreateElementModel          (device, region, "mu_sr_e", mu_sr_e)
+    CreateElementModelDerivative(device, region, "mu_sr_e", mu_sr_e, "Potential", "Electrons", "Holes")
+    CreateElementModel          (device, region, "mu_sr_h", mu_sr_h)
+    CreateElementModelDerivative(device, region, "mu_sr_h", mu_sr_h, "Potential", "Electrons", "Holes")
 
     mu_e_0="mu_bulk_e * mu_ac_e * mu_sr_e / (mu_bulk_e*mu_ac_e + mu_bulk_e*mu_sr_e + mu_ac_e*mu_sr_e)"
     mu_h_0="mu_bulk_h * mu_ac_h * mu_sr_h / (mu_bulk_h*mu_ac_h + mu_bulk_h*mu_sr_h + mu_ac_h*mu_sr_h)"
-    CreateElementModel2d          (device, region, "mu_e_0", mu_e_0)
-    CreateElementModel2d          (device, region, "mu_h_0", mu_h_0)
+    CreateElementModel          (device, region, "mu_e_0", mu_e_0)
+    CreateElementModel          (device, region, "mu_h_0", mu_h_0)
 
     #### complicated derivation here
     for k in ("e", "h"):
         for i in ("Potential", "Electrons", "Holes"):
             for j in ens:
                 ex="mu_{k}_0^2 * (mu_bulk_{k}^(-2)*mu_bulk_{k}:{i}{j} + mu_ac_{k}^(-2)*mu_ac_{k}:{i}{j} + mu_sr_{k}^(-2) * mu_sr_{k}:{i}{j})".format(i=i, j=j, k=k)
-                CreateElementModel2d(device, region, "mu_{k}_0:{i}{j}".format(i=i, j=j, k=k), ex)
+                CreateElementModel(device, region, "mu_{k}_0:{i}{j}".format(i=i, j=j, k=k), ex)
 

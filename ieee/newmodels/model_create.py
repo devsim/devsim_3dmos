@@ -143,13 +143,13 @@ def EnsureEdgeFromNodeModelExists(device, region, nodemodel):
             print("INFO: Creating ${0}@n0 and ${0}@n1".format(nodemodel))
         ds.edge_from_node_model(device=device, region=region, node_model=nodemodel)
 
-def CreateElementModel2d(device, region, model, expression):
+def CreateElementModel(device, region, model, expression):
     result=ds.element_model(device=device, region=region, name=model, equation=expression)
     if debug:
         print(("ELEMENTMODEL {d} {r} {m} \"{re}\"".format(d=device, r=region, m=model, re=result)))
 
 
-def CreateElementModelDerivative2d(device, region, model_name, expression, *args):
+def CreateElementModelDerivative(device, region, model_name, expression, *args):
     if len(args) == 0:
         raise ValueError("Must specify a list of variable names")
     dimension=ds.get_dimension(device=device)
@@ -161,7 +161,7 @@ def CreateElementModelDerivative2d(device, region, model_name, expression, *args
         raise RuntimeError("DIMENSION %d not supported" % dimension)
     for i in args:
         for j in ens:
-            CreateElementModel2d(device, region, "{0}:{1}{2}".format(model_name, i, j), "diff({0}, {1}{2})".format(expression, i, j))
+            CreateElementModel(device, region, "{0}:{1}{2}".format(model_name, i, j), "diff({0}, {1}{2})".format(expression, i, j))
 
 ### ds.edge_model is the name of the edge model to be created
 def CreateGeometricMean(device, region, nmodel, emodel):
