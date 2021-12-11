@@ -2,7 +2,7 @@
 import pandas
 import matplotlib.pyplot as plt
 
-files = ('bulk_id_vg.txt', 'bulk_hfs_id_vg.txt', 'darwish_id_vg_test.txt', )#'bulk_hfs.txt', 'darwish_hfs.txt')
+files = ('bulk_id_vg.txt', 'bulk_hfs_id_vg.txt', 'darwish_id_vg.txt', )#'bulk_hfs.txt', 'darwish_hfs.txt')
 labels =('Bulk', 'Bulk and velocity saturation', 'Bulk + Surface with velocity saturation',)
 syms = ('^k:', '+k:', 'xk:')
 #syms = ('o--', '+--', '*--')
