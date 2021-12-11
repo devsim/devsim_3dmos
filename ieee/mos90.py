@@ -112,8 +112,8 @@ def attach_oxide_contacts():
 
     # CREATE CONTACT EQUATIONS HERE
     # Add output charge later
-    ds.contact_equation(device=device, contact="source_ox", name="PotentialEquation", variable_name="Potential")
-    ds.contact_equation(device=device, contact="drain_ox", name="PotentialEquation", variable_name="Potential")
+    ds.contact_equation(device=device, contact="source_ox", name="PotentialEquation")
+    ds.contact_equation(device=device, contact="drain_ox", name="PotentialEquation")
 
     ds.custom_equation(name="fixpotential", procedure=myassemble)
 

@@ -37,7 +37,7 @@ def CreateElementContactElectronContinuityEquation(device, contact, current_mode
       Uses element current model for equation
     '''
     contact_electrons_name = "{0}nodeelectrons".format(contact)
-    ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation", variable_name="Electrons",
+    ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation",
                      node_model=contact_electrons_name,
                      element_current_model=current_model)
 
@@ -47,7 +47,7 @@ def CreateElementContactHoleContinuityEquation(device, contact, current_model):
       Uses element current model for equation
     '''
     contact_holes_name = "{0}nodeholes".format(contact)
-    ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation", variable_name="Holes",
+    ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation",
                      node_model=contact_holes_name,
                      element_current_model=current_model)
 

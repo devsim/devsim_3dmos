@@ -75,8 +75,8 @@ def CreateOxideContact(device, region, contact, vshift=""):
         CreateEdgeModel(device, region, contactcharge_edge, "Permittivity*ElectricField")
         CreateEdgeModelDerivatives(device, region, contactcharge_edge, "Permittivity*ElectricField", "Potential")
 
-    ds.contact_equation(device=device , contact=contact, name="PotentialEquation", variable_name= "Potential",
-                     node_model=contact_model_name, edge_charge_model= contactcharge_edge)
+    ds.contact_equation(device=device , contact=contact, name="PotentialEquation",
+                     node_model=contact_model_name, edge_charge_model=contactcharge_edge)
 
 
 
@@ -175,12 +175,12 @@ def CreateSiliconPotentialOnlyContact(device, region, contact, is_circuit=False)
         CreateContactNodeModel(device, contact, "{0}:{1}".format(contact_model_name,GetContactBiasName(contact)), "-1")
 
     if is_circuit:
-        ds.contact_equation(device=device, contact=contact, name="PotentialEquation", variable_name="Potential",
+        ds.contact_equation(device=device, contact=contact, name="PotentialEquation",
                          node_model=contact_model_name, edge_model="",
                          node_charge_model="contactcharge_node", edge_charge_model="contactcharge_edge",
                          node_current_model="", edge_current_model="", circuit_node=GetContactBiasName(contact))
     else:
-        ds.contact_equation(device=device, contact=contact, name="PotentialEquation", variable_name="Potential",
+        ds.contact_equation(device=device, contact=contact, name="PotentialEquation",
                          node_model=contact_model_name, edge_model="",
                          node_charge_model="contactcharge_node", edge_charge_model="contactcharge_edge",
                          node_current_model="", edge_current_model="")
@@ -257,20 +257,20 @@ def CreateSiliconDriftDiffusionAtContact(device, region, contact, is_circuit=Fal
 
     #TODO: keyword args
     if is_circuit:
-        ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation", variable_name="Electrons",
+        ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation",
                          node_model=contact_electrons_name,
                          edge_current_model="ElectronCurrent", circuit_node=GetContactBiasName(contact))
 
-        ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation", variable_name="Holes",
+        ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation",
                          node_model=contact_holes_name,
                          edge_current_model="HoleCurrent", circuit_node=GetContactBiasName(contact))
 
     else:
-        ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation", variable_name="Electrons",
+        ds.contact_equation(device=device, contact=contact, name="ElectronContinuityEquation",
                          node_model=contact_electrons_name,
                          edge_current_model="ElectronCurrent")
 
-        ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation", variable_name="Holes",
+        ds.contact_equation(device=device, contact=contact, name="HoleContinuityEquation",
                          node_model=contact_holes_name,
                          edge_current_model="HoleCurrent")
 
@@ -300,7 +300,7 @@ def CreateSiliconOxideInterface(device, interface):
       continuous potential at interface
     '''
     model_name = CreateContinuousInterfaceModel(device, interface, "Potential")
-    ds.interface_equation(device=device, interface=interface, name="PotentialEquation", variable_name="Potential", interface_model=model_name, type="continuous")
+    ds.interface_equation(device=device, interface=interface, name="PotentialEquation", interface_model=model_name, type="continuous")
 
 #
 ##TODO: similar model for silicon/silicon interface
@@ -311,7 +311,7 @@ def CreateSiliconSiliconInterface(device, interface):
     '''
     CreateSiliconOxideInterface(device, interface)
     ename = CreateContinuousInterfaceModel(device, interface, "Electrons")
-    ds.interface_equation(device=device, interface=interface, name="ElectronContinuityEquation", variable_name="Electrons", interface_model=ename, type="continuous")
+    ds.interface_equation(device=device, interface=interface, name="ElectronContinuityEquation", interface_model=ename, type="continuous")
     hname = CreateContinuousInterfaceModel(device, interface, "Holes")
-    ds.interface_equation(device=device, interface=interface, name="HoleContinuityEquation", variable_name="Holes", interface_model=hname, type="continuous")
+    ds.interface_equation(device=device, interface=interface, name="HoleContinuityEquation", interface_model=hname, type="continuous")
 
