@@ -8,4 +8,5 @@ J. E. Sanchez and Q. Chen, "Element Edge Based Discretization for TCAD Device Si
 
 The preprint to this article is available from `TechRxiv <https://doi.org/10.36227/techrxiv.14129081.v3>`_.
 
-
+Please cite these project files using this DOI, or the DOI for the specific version of these files.
+`https://doi.org/10.5281/zenodo.6879856 <https://doi.org/10.5281/zenodo.6879856>`_.
