@@ -10,3 +10,7 @@ The preprint to this article is available from `TechRxiv <https://doi.org/10.362
 
 Please cite these project files using this DOI, or the DOI for the specific version of these files.
 `https://doi.org/10.5281/zenodo.6879856 <https://doi.org/10.5281/zenodo.6879856>`_.
+
+Simulation scripts related to the ferroelectric capacitance examples are available as part of this repository:
+`https://github.com/CQSim/QS-Devsim <https://github.com/CQSim/QS-Devsim>`_.
+
